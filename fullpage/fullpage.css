@@ -1,0 +1,39 @@
+h1
+{
+    font-family: "comic-sans";
+    text-align: center;
+    color: red;
+}
+
+.s1
+{
+    background: url("pics/konserv suitsetab.png");
+}
+
+.s2
+{
+    background: url("pics/antroBROsis.png");
+}
+
+.s3
+{
+    background: url("pics/lisa what og.jpg");
+}
+
+.s4
+{
+    background: url("pics/TFNO0920.PNG");
+    background-size: contain;
+}
+
+span
+{
+    background: red !important;
+}
+
+.fp-slidesNav
+{
+    bottom:17px;
+    margin: 6em !important;
+
+}
