@@ -1,11 +1,20 @@
+
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white !important;
-    text-align: left !important;
-    margin-left: 2em !important;
+    margin-left: 4em;
     font-size: 3.5em !important;
     letter-spacing: 3px;
 }
+
+h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white !important;
+    margin-left: 9.5em !important;
+    font-size: 1.5em !important;
+    letter-spacing: 3px;
+}
+
 
 .s1 {
     background: url('images/img1.png');
@@ -31,7 +40,7 @@ h1 {
     background-size: cover;
 }
 .s6 {
-    background: url('images/img7.png');
+    background: url('images/img81.png');
     background-size: cover;
 }
 .s7 {

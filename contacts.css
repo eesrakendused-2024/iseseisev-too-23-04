@@ -1,0 +1,24 @@
+#contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-link {
+    font-size: 2em;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+
+
+.contact-link:hover {
+    transform: translateY(5px);
+    text-decoration: underline;
+}
+

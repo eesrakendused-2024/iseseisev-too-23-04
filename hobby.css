@@ -1,0 +1,10 @@
+.hobby-pics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobby-pics img {
+    margin: 20px;
+    border-radius: 20px;
+}
