@@ -8,6 +8,7 @@ h1
 .s1
 {
     background: url("pics/konserv suitsetab.png");
+    
 }
 
 .s2
@@ -22,8 +23,18 @@ h1
 
 .s4
 {
-    background: url("pics/TFNO0920.PNG");
+    /*background: url("pics/TFNO0920.PNG");
     background-size: contain;
+    position: relative;
+    /*transform-origin: 0% 0%;
+    transform: scale(0.4);*/
+}
+.pics
+{
+    /* display: flex;
+    transform-origin: 0% 0%;
+    transform: scale(0.2);*/
+    position: absolute; /*top: 0; left: 0; right: 0; bottom: 0; margin: auto; */
 }
 
 span
@@ -33,7 +44,14 @@ span
 
 .fp-slidesNav
 {
-    bottom:17px;
-    margin: 6em !important;
+    bottom:1px;
+    margin: 2em !important;
+}
 
+.links
+{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
