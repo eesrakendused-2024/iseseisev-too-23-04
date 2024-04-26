@@ -12,8 +12,8 @@ new fullpage('#fullpage', {
 
 
     afterLoad: function(origin, destination, direction){ 
-        if (destination.index == 6) { // Target section 7 (index starts at 0)
-            initialize(); // Call your initialization function
+        if (destination.index == 6) {
+            initialize();
         }
     }
 });

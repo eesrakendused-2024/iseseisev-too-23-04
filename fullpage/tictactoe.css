@@ -7,27 +7,7 @@
     font-size: 0.7em;
     position: relative;
 }
-h1 {
-    line-height: 1em;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-    font-size: 2.8em;
-    font-weight: bold;
-}
-h2 {
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
 
-}
-h3 {
-    font-size: 1.1em;
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    padding: 0;
-    margin: 10px 0 2px 0;
-}
 table {
     margin: 2% auto;
     border-collapse: collapse;
@@ -139,13 +119,13 @@ table {
 }
 
 .win-color {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(4, 96, 25);
 }
 
 .reference-link {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 20px;
+    left: 30px;
     font-size: 14px;
     color: white;
     text-decoration: none;
