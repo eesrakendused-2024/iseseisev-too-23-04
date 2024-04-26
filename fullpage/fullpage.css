@@ -1,39 +1,111 @@
-h1
-{
-    font-family: "comic-sans";
-    text-align: center;
-    color: red;
+@font-face {
+    font-family: BrH;
+    src: local("Bradley Hand ITC") ,url("BRADHITC.TTF") format("truetype");
 }
 
+h1,h2
+{
+    text-align: center;
+    color: rgb(203, 203, 203);
+    font-family: BrH;
+    font-weight: 10000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h1
+{
+    font-size: 36pt;
+}
+h2
+{
+    font-size: 20pt;
+}
+.fp-tooltip
+{
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;*/
+    font-size: 36pt;
+    font-family: BrH;
+    color: rgb(191, 25, 25);
+}
 .s1
 {
     background: url("pics/konserv suitsetab.png");
     
 }
 
+.s9
+{
+    background: url("pics/WFAC2022_DAY1-107.jpg");
+    background-size: cover;
+}
+
 .s2
 {
     background: url("pics/antroBROsis.png");
+    background-repeat: repeat;
+    
+}
+
+h1~h2
+{
+    margin-top: 6em;
 }
 
 .s3
 {
-    background: url("pics/lisa what og.jpg");
+    /*background: url("pics/lisa what og.jpg");*/
+    background-color: rgb(180, 215, 246);
 }
 
 .s4
 {
-    background: url("pics/bg1.png");
-    background-size: fill;
+    /*background: url("pics/bg1.png");
+    background-size: fill;*/
+    background-color: rgb(255, 255, 255);
 }
-.pics
+
+.s5
 {
+    position: relative;
+    
+}
+
+.s8
+{
+    background: url("pics/cosplayd.png");
+    background-size: cover;
+}
+
+.cosplay
+{
+   /* transform-origin: center;
+    scale:0.65;*/
+    margin: none !important;
+    display: block;
+}
+
+.slide
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
+/*.pic1
+{
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.2);
+    margin-bottom: 20px;
+}*/
 
 span
 {
-    background: red !important;
+    background: rgb(0, 0, 0) !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .fp-slidesNav
@@ -42,10 +114,20 @@ span
     margin: 2em !important;
 }
 
+.fp-nav
+{
+    color:black;
+}
+
 .links
 {
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    font-family: BrH;
+    font-size: 20pt;
+    font-weight: 10000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
