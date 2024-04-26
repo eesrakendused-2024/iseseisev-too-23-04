@@ -10,4 +10,5 @@ Iseseisev töö 23.04 tunni asendamiseks
 ## JavaScript mäng
 - https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
 
-
+## Lin2
+- https://www.tlu.ee/~loomets/EesrakendusteArendamine/Eesrakendused-koduleht/
