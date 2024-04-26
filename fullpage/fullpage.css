@@ -9,6 +9,9 @@
     height: 100vh;
 }
 
+.section h1 {
+    margin: 0;
+}
 .fp-watermark {
     display: none;
 }
