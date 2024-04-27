@@ -20,9 +20,17 @@
 }
 
 #navbar li a {
-  color: #fff;
+  color: darkgray;
   text-decoration: none;
   padding: 10px 20px;
+}
+
+#navbar li a.selected {
+  color: #fff;
+}
+
+#navbar li a:hover {
+  color: gray;
 }
 
 .section {
@@ -40,4 +48,8 @@
 
 .section a {
   font-size: 1.5em;
+}
+
+.section div.slide img {
+  width: 60%;
 }
