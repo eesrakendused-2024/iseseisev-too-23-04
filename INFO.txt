@@ -24,6 +24,8 @@ Lisaks lisasin pilte juurde kaustas 'images'.
 Tegin kiiresti kontakt andmed ära ning alustasin mängu lisamisega (sest tundus huvitav).
 Selle mängu leidmiseks ja koodi lahenduse väljamõtlemiseks/leidmiseks läks küll palju aega, aga nüüd see töötab.
 Pushisin githubi kõik muudatused.
+Natuke hiljem jõudsin ka lisada Spotify playlisti 'lemmik muusika' sektsiooni.
+Pushisin uuesti.
 
 28.04.2024 (___)
 
