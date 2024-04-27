@@ -2,12 +2,12 @@
 Ester Ojala
 ## Lin2
 https://www.tlu.ee/~esteroja/Eesrakendused/ER_iseseisev_too/fullpage.html
-## Kasutatud teegid
+## Kasutatud JS teegid
 - Fullpage <br>
 - jQuery <br>
 - Tippy.js <br>
 - JS Lightbox <br>
-Lisaks CSS raamistik: Bootstrap
+- Lisaks CSS raamistik: Bootstrap
 ## Kasutatud allikad
 Fullpage: https://alvarotrigo.com/fullPage/docs/#introduction 
 <br>
