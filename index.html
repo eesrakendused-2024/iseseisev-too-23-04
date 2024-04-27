@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullPage Kodutöö</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="granimStyles.css">
+</head>
+<body>
+    <div id="fullPage">
+        <div class="section">
+            <h1>My skills</h1>
+            <div class="slide">
+                <h2>Coding (beginner level)</h2>
+                <div id="skills-text">
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JS</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <h2>Applications</h2>
+                <div id="skills-text">
+                    <ul>
+                        <li>Word</li>
+                        <li>Excel</li>
+                        <li>Powerpoint</li>
+                        <li>Vertabelo</li>
+                        <li>Figma</li>
+                        <li>Clip Studio Paint</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Contact details</h1>
+            <canvas id="canvas-basic"></canvas>
+            <div id="slide-text">
+                <p> 
+                    Email: jmktrk@tlu.ee <br>
+                    Phonenumber: 009449420 <br>
+                    Address: A. Weizenbergi 37
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <h1>What I've created</h1>
+            <div class="slide">
+                <p class="clock-text">Githubi leiab <a href="https://github.com/JanMarkusK/kodutooJMK">siit</a></p>
+                <div><img class="clock-image"src="images/clockLeht.JPG" alt=""></div>
+            </div>
+        </div>
+        <div class="section">
+            <h1>My hobbies</h1>
+            <div class="slide">
+                <h2>Gaming</h2>
+                <img id="gaming-img" src="https://i.pinimg.com/originals/64/fd/9b/64fd9b859172e0ed330da354b854b4b8.jpg" alt="LoL">
+            </div>
+            <div class="slide">
+                <h2>Warhammer 40k</h2>
+                <img id="gaming-img" src="https://wallpapers.com/images/hd/tau-vs-white-scars-warhammer-40k-4r4m3a3lk7g1fk03.jpg" alt="Wh40k">
+            </div>
+            <div class="slide">
+                <h2>Art</h2>
+                <div class="grid">
+                    <div class="grid-item"><img src="images/DailyReference2.jpg" alt=""></div>
+                    <div class="grid-item"><img src="images/Elden Ring landscape Study.jpg" alt=""></div>
+                    <div class="grid-item"><img src="images/Heike monogatari study(small).jpg" alt=""></div>
+                    <div class="grid-item"><img src="images/Rakugo study final.jpg" alt=""></div>
+                    <div class="grid-item"><img src="images/Shinigami to Bocchan final.jpg" alt=""></div>
+                    <div class="grid-item grid-item--height2"><img src="images/Valge lill lõpplik 2.png" alt=""></div>
+                </div>
+            </div> 
+        </div>
+        <div class="section">
+            <h1>List of my favourite music</h1>
+            <div class="slide">
+                <div id="musicDiv">
+                    <p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/59QyNq79p115rEwSBgAs8u?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </p>
+                    <p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4MwfzlyeqQoNYAM61VSuj2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </p>
+                    <p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4pgAViogcYp6DCA0NIC2G5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="section">
+            <h1>Game</h1>
+            <div id="game-div">
+                <p>
+                    Game originates from <a href="https://www.htmlgames.com/">here</a>
+                </p>
+                <script src="https://cdn.htmlgames.com/embed.js?game=Minesweeper&amp;bgcolor=white"></script>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="granim.js-2.0.0/dist/granim.min.js"></script>
+    <script src="fullPageScript.js"></script>
+    <script src="granimScript.js"></script>
+    <!--Script on siin ka, sest kui on ainult eraldi failis siis masonry tuimalt ei hakka tööle ning ma ei suutnud seda parandada-->
+    <script type="module">
+        window.onload = () => {
+            const grid = document.querySelector('.grid');
+            const masonry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            gutter: 10,
+            horizontalOrder: true
+            });        
+        }
+    </script>
+</body>
+</html>

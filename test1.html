@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-item"><img src="images/DailyReference2.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Elden Ring landscape Study.jpg" alt=""></div>
+        <div class="grid-item grid-item--width2"><img src="images/Heike monogatari study(small).jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Rakugo study final.jpg" alt=""></div>
+        <div class="grid-item grid-item--height2"><img src="images/Shinigami to Bocchan final.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/DailyReference2.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Elden Ring landscape Study.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Heike monogatari study(small).jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Rakugo study final.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Shinigami to Bocchan final.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/DailyReference2.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Elden Ring landscape Study.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Heike monogatari study(small).jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Rakugo study final.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Shinigami to Bocchan final.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/DailyReference2.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Elden Ring landscape Study.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Heike monogatari study(small).jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Rakugo study final.jpg" alt=""></div>
+        <div class="grid-item"><img src="images/Shinigami to Bocchan final.jpg" alt=""></div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        window.onload = () => {
+            const grid = document.querySelector('.grid');
+            const masonry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                gutter: 10,
+            });        
+        }
+    </script>
+</body>
+</html>
