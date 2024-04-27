@@ -1,0 +1,264 @@
+h1{
+    font-family: Courier;
+    text-align: center;
+    color: white
+}
+
+#myMenu{
+    font-family: Courier;
+    color: white;
+    font-size: 20px;
+    margin-left: 110px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-item a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 247, 255, 0.137);    
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.s0{
+    background: url('img/avaleht.jpg');
+}
+
+.s1{
+    background: url('img/oskused.jpg');
+}
+
+.s2{
+    background: url('img/kontakt.jpg');
+}
+
+.s3{
+    background: url('img/tood.jpg');
+}
+
+.s4{
+    background: url('img/hobid.jpg');
+}
+
+.s5{
+    background: url('img/muusika.jpg');
+}
+
+.s6{
+    background: url('img/mang.jpg');
+}
+
+
+.s0, .s1, .s2, .s3, .s4, .s5, .s6{
+    background-size: cover !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ 
+
+
+    h1{
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 2em;
+        font-size: 4rem;
+    }
+}
+
+.openPage {
+    justify-content: flex-start !important;
+}
+
+.s2 {
+    justify-content: center !important;
+    p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+span{
+    background: white !important;
+}
+
+.fp-slidesNav.fp-bottom{
+    margin-left: 1em !important;
+}
+
+
+.sl1, .sl2, .sl3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% !important;
+    h1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+}
+
+.header{
+    margin-top: 50px;
+}
+
+.pageContainer{
+    justify-content: center;
+    display: grid !important;
+}
+
+.textElement{
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+.imgElement{
+    justify-self: center;
+}
+
+#pics{
+    flex-direction: row;
+}
+
+#pic1{
+    width: 450px;
+    height: auto;
+    align-self: center;
+}
+
+#pic2, #pic3, #pic4, #pic5{
+    width: 250px;
+    height: auto;
+    align-self: center;
+}
+
+.text{
+    font-family: Courier;
+    color: white;
+    justify-content: flex-start;
+    align-self: flex-start;
+    font-size: 70px;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactInfo{
+    font-family: Courier;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    padding-left: 5em;
+}
+.contactWord{
+    padding-right: 5em;
+}
+
+.hobbiesList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.my-tooltip{
+    opacity: 100 !important;
+    font-family: Courier !important;
+    margin-left: 110px !important;
+
+}
+
+.hobbyText{
+    font-family: Courier;
+    font-size: 20px;
+    margin-left: 125px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:white;
+}
+.my-btn{
+    border: 2px solid #ccc !important;
+    border-radius: 6px !important;
+    background-color: rgba(100, 148, 237, 0.24) !important;
+    width: max-content !important;
+    margin: 20px !important;
+    font-size: 20px !important;
+    color: white !important;
+    
+}
+.my-btn:hover{
+    cursor: pointer !important;
+    background:#1f0cc567 !important;
+}
+
+
+
+.musicContainer, .gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer{
+    margin-top: 50px;
+}
+
+.musicContainer iframe, .gameContainer iframe {
+    width: 60%;
+    height: 60vh;
+}
+
+
+.thumbnail img {
+    width: 50%;
+    height: auto; 
+    margin: 0 auto; 
+    display: block;
+}
+
+.thumbnail h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+a:link, a:visited {
+    text-shadow: 0 0 20px rgb(106, 206, 219),  0 0 20px rgba(63, 186, 228, 0);
+    text-decoration: none;
+    color: white;
+    width: 150px;
+}
+
+.nav-link:hover, .link:hover {
+    color:rgb(0, 105, 79);
+    text-decoration: none;
+}
+
+.link{
+    font-family: Courier;
+
+}
