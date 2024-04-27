@@ -41,12 +41,23 @@ h2
     font-family: BrH;
     color: rgb(191, 25, 25);
 }
+iframe
+{
+    display: flex;
+    flex-direction: row;
+    border-radius:12px;
+    margin-left: 150px;
+}
 .s1
 {
-    background-color: greenyellow;
+    background-color: rgb(71, 255, 47) !important;
     margin: none !important;
 }
-
+.s7
+{
+    background-color: rgb(46, 46, 46);
+    align-items: center !important;
+}
 .s9
 {
     background: url("pics/WFAC2022_DAY1-107.jpg");
@@ -76,7 +87,10 @@ h1~h2
 {
     margin-top: 6em;
 }
-
+.s6
+{
+    background-color: rgb(199, 228, 254);
+}
 .s3
 {
     /*background: url("pics/lisa what og.jpg");*/
@@ -85,15 +99,14 @@ h1~h2
 
 .s4
 {
-    /*background: url("pics/bg1.png");
-    background-size: fill;*/
-    background-color: rgb(255, 255, 255);
+    background: url("pics/Screenshot 2022-09-29 205012.png");
+    background-size: fill;
 }
 
-.s5
+.s50
 {
-    position: relative;
-    
+    background: url("pics/TFNO0920.PNG");
+    background-size:contain;
 }
 
 .s8
@@ -117,14 +130,6 @@ h1~h2
     justify-content: center;
 
 }
-
-/*.pic1
-{
-    align-items: center;
-    justify-content: center;
-    transform: scale(0.2);
-    margin-bottom: 20px;
-}*/
 
 span
 {
@@ -155,4 +160,11 @@ span
     font-weight: 10000;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+}
+canvas 
+{
+    border: 1px solid white;
+    background-color: black;
+    align-items: center;
+    margin-left: 120px;
 }

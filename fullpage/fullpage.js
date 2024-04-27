@@ -2,12 +2,11 @@ var player = videojs('my-video', {
     aspectRatio: '9:16'
   });
 
-
 var myFullpage = new fullpage('#fullpage', {
     // Navigation
     menu: '#menu',
     lockAnchors: false,
-    anchors:["section1","section2","section3","section4","section5","section6","section7"],
+    anchors:["section1","section2","section3","section4","section5","section6","section7","section8","section9"],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ["Emma Mae Roodla","Oskused","Kontakt","Joonistused","Hobid","Cosplay","Vibusport","Lemmik muusika","Mäng"],
@@ -43,7 +42,7 @@ var myFullpage = new fullpage('#fullpage', {
     bigSectionsDestination: null,
 
     // Accessibility
-    keyboardScrolling: true,
+    keyboardScrolling: false,
     animateAnchor: true,
     recordHistory: true,
 

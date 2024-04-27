@@ -1,6 +1,8 @@
 # iseseisev-too-23-04
 Iseseisev töö 23.04 tunni asendamiseks
 
+# Töö asub siin: https://greeny.cs.tlu.ee/~emmodla/eesrakendused/fullpage/fullpage.html
+
 # 12 punkti
 
 ## Tähtaeg 28.04.2024 23:59
