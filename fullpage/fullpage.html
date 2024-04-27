@@ -3,20 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma</title>
+    <title>Veebileht</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="fullpage.css">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <script src="fullpage.js" defer></script>
+    
 </head>
 <body>
 
     <div id="fullpage">
         <div class="section s1">
             <h1>Emma Mae Roodla</h1>
-            <h2>Tervist!</h2>
+            <h3>ma ei tea miks siin videol hiiglaslikud margin'id on, aga need ei tule ära :(</h3>
+            <video id="my-video" class="video-js" controls muted loop autoplay preload="auto" data-setup="{}">
+                <source src="pics/Toothless Dragon Dancing - Green Screen.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
         </div>
         <div class="section s2">
-            <h1>Oskused</h1>
-            <h2>Phyton, RenPy, Photoshop (natuke), Joonistamine, Käsitöö, Küpsetamine</h2>
+            <div class="slide">
+                <h1>Oskused</h1>
+            </div>
+            <div class="slide">
+                <h1>RenPy</h1>
+                <img src="pics/Screenshot 1.png" alt="oskused1">
+            </div>
+            <div class="slide">
+                <h1>Meemide tegemine</h1>
+                <div class="memes">
+                    <img src="pics/antroBROsis.png" alt="meem1">
+                    <img src="pics/crispy master.png" alt="meem2">
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Meisterdamine</h1>
+                <div class="craft">
+                    <img src="pics/IMG_7832.jpg" alt="oskused2">
+                </div>
+                <h2>Nii kenad margin'id, eks ole :((((((</h2>
+            </div>
+            <div class="slide">
+                <h1>Küpsetamine</h1>
+                <img src="pics/kook.png" alt="oskused3">
+            </div>
         </div>
         <div class="section s3">
             <h1>Kontakt</h1>
@@ -57,7 +91,6 @@
         <div class="section s9">
             <h1>Vibusport</h1>
         </div>
-        
         <div class="section s6">
             <h1>Lemmik muusika</h1>
         </div>
@@ -65,21 +98,12 @@
             <h1>Mäng</h1>
         </div>
     </div>
+    <script>
+        
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        new fullpage("#fullpage",
-        {
-            //autoScrolling:true,
-            navigation:true,
-            anchors: ["section1","section2","section3","section4" ],
-            navigationTooltips: ["Emma Mae Roodla","Oskused","Kontakt","Joonistused","Hobid","Cosplay","Vibusport","Lemmik muusika","Mäng"],
-            showActiveTooltip: true,
-            //scrollingSpeed:
-            slidesNavigation:true,
-            controlArrows:false
-        });
-    </script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pica/9.0.1/pica.js" integrity="sha512-7vHtytbFByrP/eYEQWNj6cvI1Skm1bw/Yta8SIuy9SykDcVvTUmMR+vGf1S3aNM8CusU1NlpA9nJGGsIGI76kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

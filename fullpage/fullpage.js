@@ -1,13 +1,18 @@
+var player = videojs('my-video', {
+    aspectRatio: '9:16'
+  });
+
+
 var myFullpage = new fullpage('#fullpage', {
     // Navigation
     menu: '#menu',
     lockAnchors: false,
-    anchors:['firstPage', 'secondPage'],
-    navigation: false,
+    anchors:["section1","section2","section3","section4","section5","section6","section7"],
+    navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
-    showActiveTooltip: false,
-    slidesNavigation: false,
+    navigationTooltips: ["Emma Mae Roodla","Oskused","Kontakt","Joonistused","Hobid","Cosplay","Vibusport","Lemmik muusika","Mäng"],
+    showActiveTooltip: true,
+    slidesNavigation: true,
     slidesNavPosition: 'bottom',
 
     // Scrolling
@@ -43,15 +48,15 @@ var myFullpage = new fullpage('#fullpage', {
     recordHistory: true,
 
     // Design
-    controlArrows: true,
+    controlArrows: false,
     controlArrowsHTML: [
         '<div class="fp-arrow"></div>', 
         '<div class="fp-arrow"></div>'
     ],
     verticalCentered: true,
     sectionsColor : ['#ccc', '#fff'],
-    paddingTop: '3em',
-    paddingBottom: '10px',
+    //paddingTop: '3em',
+    //paddingBottom: '10px',
     fixedElements: '#header, .footer',
     responsiveWidth: 0,
     responsiveHeight: 0,
@@ -85,3 +90,4 @@ var myFullpage = new fullpage('#fullpage', {
     onSlideLeave: function(section, origin, destination, direction, trigger){},
     onScrollOverflow: function(section, slide, position, direction){}
 });
+
