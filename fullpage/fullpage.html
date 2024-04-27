@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veebileht</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fullpage.css">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <script src="fullpage.js" defer></script>
+    
+</head>
+<body>
+
+    <div id="fullpage">
+        <div class="section s1">
+            <h1>Emma Mae Roodla</h1>
+            <h3>ma ei tea miks siin videol hiiglaslikud margin'id on, aga need ei tule ära :(</h3>
+            <video id="my-video" class="video-js" controls muted loop autoplay preload="auto" data-setup="{}">
+                <source src="pics/Toothless Dragon Dancing - Green Screen.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+        <div class="section s2">
+            <div class="slide">
+                <h1>Oskused</h1>
+            </div>
+            <div class="slide">
+                <h1>RenPy</h1>
+                <img src="pics/Screenshot 1.png" alt="oskused1">
+            </div>
+            <div class="slide">
+                <h1>Meemide tegemine</h1>
+                <div class="memes">
+                    <img src="pics/antroBROsis.png" alt="meem1">
+                    <img src="pics/crispy master.png" alt="meem2">
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Meisterdamine</h1>
+                <div class="craft">
+                    <img src="pics/IMG_7832.jpg" alt="oskused2">
+                </div>
+                <h2>Nii kenad margin'id, eks ole :((((((</h2>
+            </div>
+            <div class="slide">
+                <h1>Küpsetamine</h1>
+                <img src="pics/kook.png" alt="oskused3">
+            </div>
+        </div>
+        <div class="section s3">
+            <h1>Kontakt</h1>
+            <div class="links">
+                <a href="https://www.instagram.com/emma.mae.haha/">Instagram - emma.mae.haha</a>
+                <a href="https://twitter.com/real_kodukass">Twitter/X - real_kodukass</a>
+                <a href="https://mastodon.gamedev.place/@kodukass">mastodon.gamedev.place - kodukass</a>
+                <a href="https://kodukass.itch.io/">Itch.Io - kodukass</a>
+                <a>E-mail - emmamaeroodla284@gmail.com</a>
+                <a>Discord - kodukass</a>
+            </div>
+            
+        </div>
+        <div class="section s4">
+            <!--joonistused-->
+            <div class="slide">
+                <h1>Joonistused</h1>
+                <div class="pic1">
+                    <img src="pics/niel_cosplay_redraw_by_antennaemma_dfmkzd6.jpg" alt="niel">
+                </div>
+            </div>
+            <div class="slide">
+                <img src="pics/bg1.png" alt="bg1">
+            </div>
+            <div class="slide">
+                <img src="pics/bg2.png" alt="bg2">
+            </div>
+            <div class="slide">
+                <img src="pics/pretty_friendly_place_by_antennaemma_ddovfmc.png" alt="bg3">
+            </div>
+        </div>
+        <div class="section s50">
+            <h1>Hobid</h1>
+        </div>
+        <div class="section s8">
+            <h1>Cosplay</h1>
+        </div>
+        <div class="section s9">
+            <h1>Vibusport</h1>
+        </div>
+        <div class="section s6">
+            <h1>Tore playlist</h1>
+            <iframe src="https://open.spotify.com/embed/playlist/0cnTpebGwgsVV7uM0PnvAW?utm_source=generator" width="80%" height="680" frameBorder="0"  allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="section s7">
+            <h1>Mäng (looja: straker (github))</h1>
+            <canvas width="400" height="400" id="game"></canvas>
+            <script>
+            var canvas = document.getElementById('game');
+            var context = canvas.getContext('2d');
+            
+            // the canvas width & height, snake x & y, and the apple x & y, all need to be a multiples of the grid size in order for collision detection to work
+            // (e.g. 16 * 25 = 400)
+            var grid = 16;
+            var count = 0;
+
+            var snake = {
+            x: 160,
+            y: 160,
+
+            // snake velocity. moves one grid length every frame in either the x or y direction
+            dx: grid,
+            dy: 0,
+
+            // keep track of all grids the snake body occupies
+            cells: [],
+
+            // length of the snake. grows when eating an apple
+            maxCells: 4
+            };
+            var apple = {
+            x: 320,
+            y: 320
+            };
+
+            // get random whole numbers in a specific range
+            // @see https://stackoverflow.com/a/1527820/2124254
+            function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+            }
+
+            // game loop
+            function loop() {
+            requestAnimationFrame(loop);
+
+            // slow game loop to 15 fps instead of 60 (60/15 = 4)
+            if (++count < 4) {
+                return;
+            }
+
+            count = 0;
+            context.clearRect(0,0,canvas.width,canvas.height);
+
+            // move snake by it's velocity
+            snake.x += snake.dx;
+            snake.y += snake.dy;
+
+            // wrap snake position horizontally on edge of screen
+            if (snake.x < 0) {
+                snake.x = canvas.width - grid;
+            }
+            else if (snake.x >= canvas.width) {
+                snake.x = 0;
+            }
+
+            // wrap snake position vertically on edge of screen
+            if (snake.y < 0) {
+                snake.y = canvas.height - grid;
+            }
+            else if (snake.y >= canvas.height) {
+                snake.y = 0;
+            }
+
+            // keep track of where snake has been. front of the array is always the head
+            snake.cells.unshift({x: snake.x, y: snake.y});
+
+            // remove cells as we move away from them
+            if (snake.cells.length > snake.maxCells) {
+                snake.cells.pop();
+            }
+
+            // draw apple
+            context.fillStyle = 'red';
+            context.fillRect(apple.x, apple.y, grid-1, grid-1);
+
+            // draw snake one cell at a time
+            context.fillStyle = 'green';
+            snake.cells.forEach(function(cell, index) {
+
+                // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
+                context.fillRect(cell.x, cell.y, grid-1, grid-1);
+
+                // snake ate apple
+                if (cell.x === apple.x && cell.y === apple.y) {
+                snake.maxCells++;
+
+                // canvas is 400x400 which is 25x25 grids
+                apple.x = getRandomInt(0, 25) * grid;
+                apple.y = getRandomInt(0, 25) * grid;
+                }
+
+                // check collision with all cells after this one (modified bubble sort)
+                for (var i = index + 1; i < snake.cells.length; i++) {
+
+                // snake occupies same space as a body part. reset game
+                if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+                    snake.x = 160;
+                    snake.y = 160;
+                    snake.cells = [];
+                    snake.maxCells = 4;
+                    snake.dx = grid;
+                    snake.dy = 0;
+
+                    apple.x = getRandomInt(0, 25) * grid;
+                    apple.y = getRandomInt(0, 25) * grid;
+                }
+                }
+            });
+            }
+
+            // listen to keyboard events to move the snake
+            document.addEventListener('keydown', function(e) {
+            // prevent snake from backtracking on itself by checking that it's
+            // not already moving on the same axis (pressing left while moving
+            // left won't do anything, and pressing right while moving left
+            // shouldn't let you collide with your own body)
+
+            // left arrow key
+            if (e.which === 37 && snake.dx === 0) {
+                snake.dx = -grid;
+                snake.dy = 0;
+            }
+            // up arrow key
+            else if (e.which === 38 && snake.dy === 0) {
+                snake.dy = -grid;
+                snake.dx = 0;
+            }
+            // right arrow key
+            else if (e.which === 39 && snake.dx === 0) {
+                snake.dx = grid;
+                snake.dy = 0;
+            }
+            // down arrow key
+            else if (e.which === 40 && snake.dy === 0) {
+                snake.dy = grid;
+                snake.dx = 0;
+            }
+            });
+
+            // start the game
+            requestAnimationFrame(loop);
+            </script>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pica/9.0.1/pica.js" integrity="sha512-7vHtytbFByrP/eYEQWNj6cvI1Skm1bw/Yta8SIuy9SykDcVvTUmMR+vGf1S3aNM8CusU1NlpA9nJGGsIGI76kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

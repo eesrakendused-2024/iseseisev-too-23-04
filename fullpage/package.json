@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "fullpage.js": "^4.0.22",
+    "pica": "^9.0.1",
+    "youtube-playlist": "^1.0.4"
+  },
+  "devDependencies": {
+    "video.js": "^8.10.0"
+  }
+}
