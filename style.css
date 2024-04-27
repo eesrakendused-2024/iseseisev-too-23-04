@@ -1,0 +1,43 @@
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: arial;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.section {
+  text-align: center;
+  font-family: arial;
+}
+
+.section h1 {
+  font-size: 3em;
+}
+
+.section p {
+  font-size: 1.5em;
+}
+
+.section a {
+  font-size: 1.5em;
+}
