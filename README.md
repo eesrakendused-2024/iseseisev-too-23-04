@@ -12,12 +12,13 @@ https://www.tlu.ee/~esteroja/Eesrakendused/ER_iseseisev_too/fullpage.html
 Fullpage: https://alvarotrigo.com/fullPage/docs/#introduction 
 <br>
 Taustapildid: </br>
-https://unsplash.com/photos/silhouette-of-mountains-during-sunset-_XLmDKEvxrk
-https://unsplash.com/photos/silhouette-of-birds-flying-over-bare-trees-during-sunset-o1kmCjOS8s8
-https://unsplash.com/photos/green-trees-on-mountain-under-white-clouds-during-daytime-SNR-S6fO50I
-https://unsplash.com/photos/body-of-water-near-mountain-during-blue-hour-SV3V-D1G2q4
-https://unsplash.com/photos/ocean-during-golden-hour-yPbBYE1pkHo
-https://unsplash.com/photos/snow-covered-mountains-during-daytime-w1m0dTVcg4g
+https://unsplash.com/photos/silhouette-of-mountains-during-sunset-_XLmDKEvxrk <br>
+https://unsplash.com/photos/silhouette-of-birds-flying-over-bare-trees-during-sunset-o1kmCjOS8s8 <br>
+https://unsplash.com/photos/green-trees-on-mountain-under-white-clouds-during-daytime-SNR-S6fO50I <br>
+https://unsplash.com/photos/body-of-water-near-mountain-during-blue-hour-SV3V-D1G2q4 <br>
+https://unsplash.com/photos/ocean-during-golden-hour-yPbBYE1pkHo <br>
+https://unsplash.com/photos/snow-covered-mountains-during-daytime-w1m0dTVcg4g <br>
+https://unsplash.com/photos/green-trees-on-mountain-during-daytime-NOO2KBA6h6I
 <br>
 Mäng: https://www.codingnepalweb.com/demos/build-hangman-game-html-javascript/
 <br>
