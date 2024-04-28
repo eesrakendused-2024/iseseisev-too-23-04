@@ -1,3 +1,4 @@
+//Tutoriali abil tehtud, sama kood on ka HTML failis, et see töötaks
 import Masonry from 'masonry-layout';
 
 window.onload = () => {
