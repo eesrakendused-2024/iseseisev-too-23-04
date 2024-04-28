@@ -7,6 +7,7 @@ https://www.tlu.ee/~esteroja/Eesrakendused/ER_iseseisev_too/fullpage.html
 - jQuery <br>
 - Tippy.js <br>
 - JS Lightbox <br>
+- Chart.js <br>
 - Lisaks CSS raamistik: Bootstrap
 ## Kasutatud allikad
 Fullpage: https://alvarotrigo.com/fullPage/docs/#introduction 
@@ -25,6 +26,8 @@ Mäng: https://www.codingnepalweb.com/demos/build-hangman-game-html-javascript/
 Hobide pop-up kastid: https://atomiks.github.io/tippyjs/
 <br>
 Pildid täisekraaniks: https://fslightbox.com/javascript/documentation/how-to-use
+<br>
+Oskuste diagramm: https://www.chartjs.org/docs/latest/
 <br>
 Menüü: https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
 
