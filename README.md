@@ -6,12 +6,19 @@ Iseseisev töö 23.04 tunni asendamiseks
 ## Link tööle - http://greeny.cs.tlu.ee/~karasen/iseseisev/fullpage.html
 
 Kasutatud materjalid: 
+
 https://alvarotrigo.com/fullPage/docs/#introduction
+
 https://youtu.be/IeZSN6lWsWM?si=swngVn5MmYu8BNJN
+
 Mäng tehtud ChatGPT'ga. 
+
 Pildid:
+
 https://pixabay.com/photos/camera-analog-film-photography-4613669/
+
 https://pixabay.com/photos/audience-band-concert-crowd-1853662/
+
 https://pixabay.com/photos/weightlifting-lifting-bodybuilding-8312162/
 
 # 12 punkti
