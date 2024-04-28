@@ -125,7 +125,7 @@ body {
     border-image-repeat: stretch;
     border-image-slice: 100%;
     border-image-source: none;
-    border-image-source: url("https://greeny.cs.tlu.ee/~rinde/media/pics/border/raam_03.png");
+    border-image-source: url("images/raam_03.png");
     border-image-slice: 20 20 20 20;
     border-image-repeat: round;
 }
