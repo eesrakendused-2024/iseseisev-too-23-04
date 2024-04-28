@@ -1,0 +1,108 @@
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255,255,255,.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255,255,255,.8);
+}
+
+#menu li a, #menu li.active a {
+    padding: 9px 18px;
+    display: block;
+    text-align: center;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+.section {
+    font-size: 24px; 
+}
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 {
+    background-image: linear-gradient(to bottom right, #FFD700, #FFA500);
+    color: #fff;
+    font-family: Gabriola, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#section2 {
+    background-image: linear-gradient(to bottom right, #FFD700, #FFA500);
+}
+
+#section3 {
+    background-image: linear-gradient(to bottom right, #FFD700, #FFA500);
+}
+
+.slide {
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
