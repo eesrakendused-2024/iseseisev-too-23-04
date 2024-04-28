@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Koduleht</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <nav class="top-menu">
+            <ul>
+                <li><a href="#" data-section-index="0">Koduleht</a></li>
+                <li><a href="#" data-section-index="1">Oskused</a></li>
+                <li><a href="#" data-section-index="2">Tehtud tööd</a></li>
+                <li><a href="#" data-section-index="3">Hobid</a></li>
+                <li><a href="#" data-section-index="4">Muusika</li>
+                <li><a href="#" data-section-index="5">Mäng</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="fullPage">
+        <div class="section s1">
+            <h1>Karmeni Koduleht</h1>
+            <button id="contact-button" class="contact-button">Kontakt</button>
+            <div id="contact-details" class="contact-details" style="display: none;">
+                <p>Karmen Klaasen</p>
+                <p>E-post: kklaasen@tlu.ee</p>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="slide">
+                <h1>Oskused</h1>
+            </div>
+            <div class="slide">
+                <h1>Tehnilised oskused</h1>
+                <ul><li>Programmeerimise keeled: Python, Java, JavaScript</li> 
+                <li>Veebiarendus: HTML, CSS</li> 
+                <li>Andmebaasihaldus: SQL</li></ul>
+            </div>
+            <div class="slide">
+                <h1>Muud oskused</h1>
+                <ul><li>Probleemide lahendamine</li> 
+                <li>Ajajuhtimine ja planeerimine</li> 
+                <li>Analüütiline mõtlemine</li></ul>
+            </div>
+        </div>
+        <div class="section s3">
+            <h1>Tehtud tööd</h1>
+            <h2>Kella rakendus:</h2>
+            <a href="https://github.com/kklaasen1/kodutoo-1" target="_blank" class="github-link">GitHub'i link tööle</a>
+            <br>
+            <div class="image-container">
+                <img src="Screenshot.png" alt="Screenshot" />
+            </div>
+        </div>
+        <div class="section s4">
+            <h1>Hobid</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="photography.jpg" alt="Fotograafia">
+                        <p>Fotograafia</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="music.jpg" alt="Live-muusika">
+                        <p>Live-muusika kuulamine</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="weightlifting.jpg" alt="Jõutreening">
+                        <p>Jõutreening</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="section s5">
+            <h1>Muusika</h1>
+            <div class="spotify-playlist">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcRXFNfZr7Tp?utm_source=generator&theme=0" width="100%" height="480" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="section s6">
+            <h1>Arvamismäng</h1>
+            <div id="game-container">
+                <p>Arva ära number 1-10 vahel:</p>
+                <input type="number" id="guess-input" min="1" max="10" placeholder="Sisesta oma pakkumine" />
+                <button id="submit-guess">Sisesta number</button>
+                <p id="feedback"></p>
+                <button id="play-again" style="display: none;">Mängi uuesti</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="fullpage.js"></script>
+</body>
+</html>
