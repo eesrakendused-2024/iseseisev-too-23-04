@@ -68,6 +68,6 @@ Tagasisidet saab otse *pull request*'i millele ootan Sinupoolseid kommentaare/m�
 * Boonuspunktid:
     * Loomingulisus (NB! nõuded peavad olema täidetud)
 
-
+edit
 
 
