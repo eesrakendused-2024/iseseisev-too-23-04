@@ -1,0 +1,261 @@
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100; /*100-999*/
+  font-style: normal;
+}
+
+.open-sans-font {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: blue;
+    font-size: 5em;
+}
+
+p {
+    font-family: 'Open Sans';
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.list {
+    font-family: 'Montserrat';
+    text-align: left;
+    color: white;
+    margin-left: 8em;
+    font-size: 2em;
+}
+
+.s1 {
+    background: url('images/one.jpg');
+    background-size: cover;
+}
+
+.s2 {
+    background: url('images/skills.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+}
+
+.s2_2 {
+    background: url('images/code.jpg');
+    background-size: cover;
+}
+
+.s2_3 {
+    background: url('images/three.jpg');
+    background-size: cover;
+}
+
+.s3 {
+    background: url('images/gaming.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+}
+
+.s4 {
+    background: url('images/music.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    p {
+        text-align: left;
+        margin-left: 5em;
+    }
+
+}
+
+.section4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20em;
+}
+
+.musiclist {
+    margin-right: 2em;
+}
+
+.s5 {
+    background: url('images/code.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    p {
+        text-align: left;
+        margin-left: 5em;
+    }
+}
+
+.s6 {
+    background: lightblue;
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    p {
+        text-align: left;
+        margin-left: 5em;
+    }
+}
+
+.s7 {
+    background: url('images/phone.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    p {
+        text-align: left;
+        margin-left: 5em;
+    }
+}
+
+span {
+    background: white !important;
+}
+
+.fp-slidesNav.fp-bottom {
+    margin-left: 1em !important;
+}
+
+/* To center everything in game */
+.game{
+    font-family: "Jersey 15";
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Title of the game */
+.title{
+    color:blue;
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 2;
+}
+ 
+/* Score Board */
+.score{
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+ 
+/* Score  */
+.p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+ 
+/* displaying three buttons in one line */
+.options{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+ 
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: green;
+    outline: none;
+    border-color: green;
+    border: none;
+    cursor: pointer;
+}
+ 
+.move{
+    font-size: 2rem;
+    font-weight: bold;
+}
+ 
+/* Reload button style */
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+ 
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{  
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+}
+
+.source {
+    font-family: 'Jersey 15';
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    text-align: left;
+}
