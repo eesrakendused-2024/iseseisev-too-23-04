@@ -1,0 +1,230 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.s1 { background-color: #f8d8d8; }
+.s2 { background-color: #f8edc7; }
+.s3 { background-color: #d8efc5; }
+.s4 { background-color: #b1d1db; } 
+.s5 { background-color: #e5b2d7; } 
+.s6 { background-color: #cdb4e1; } 
+
+.opInfo {
+    font-size: 14px;
+}
+
+.section {
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s1 h1 {
+    color: #333;
+}
+
+.s1 p {
+    font-size: 20px;
+}
+
+.upper-content {
+    margin-bottom: 80px;
+}
+  
+.lower-content {
+    margin-top: 80px;
+}
+
+.s2 {
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.s2 h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.contact .info {
+    display: none;
+}
+
+.contact:hover .info {
+    display: inline;
+    color: #056edd;
+    font-weight: bold;
+}
+
+.visible .info {
+    display: inline;
+}
+
+.s3 p {
+    font-size: 24px;
+}
+
+.hobby-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Hobby {
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.Hobby img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Hobby:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Hobby p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.s5 {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.s5 h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.framed {
+    border: 20px solid white;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-source: url("https://greeny.cs.tlu.ee/~rinde/media/pics/border/raam_03.png");
+    border-image-slice: 20 20 20 20;
+    border-image-repeat: round;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fdfdfdb1;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#menu li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#menu li a:hover {
+    background-color: #ffffff;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.slide h1, .slide p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.s2 .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s2 .slide p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.s6 .slide {
+    flex-direction: column;
+}
+
+#game-board {
+    position: relative;
+    width: calc(60vw - 4px);
+    height: calc(60vh - 4px);
+    border: 2px solid #000;
+    overflow: hidden;
+    margin: auto;
+}
+
+.target {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.button, .restart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.restart-button {
+    background-color: #f44336;
+}
+
+.restart-button:hover {
+    background-color: #d32f2f;
+}
