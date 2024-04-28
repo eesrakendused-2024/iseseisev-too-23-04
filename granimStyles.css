@@ -1,3 +1,4 @@
+/* Granim näitest võetud, lisasin position ja z index, et tekst saaks selle peal olla*/
 #canvas-basic {
     position: relative;
     z-index: 100; 
