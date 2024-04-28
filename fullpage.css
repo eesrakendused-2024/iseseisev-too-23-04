@@ -74,7 +74,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
- 
 
 
     h1{
@@ -102,12 +101,29 @@ span{
     background: white !important;
 }
 
+#myChart{
+    display: block;
+    height: 300px;
+    background-color: rgb(219, 237, 252);
+    font-family: Courier;
+}
 .fp-slidesNav.fp-bottom{
     margin-left: 1em !important;
 }
 
+.chart{
+    justify-content: center;
+}
 
-.sl1, .sl2, .sl3{
+.skillsText{
+    font-family: Courier;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:white;
+}
+
+.sl0, .sl1, .sl2, .sl3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,7 +262,7 @@ span{
     text-align: center;
 }
 
-a:link, a:visited {
+a:link, a:visited, .skillsLink:link {
     text-shadow: 0 0 20px rgb(106, 206, 219),  0 0 20px rgba(63, 186, 228, 0);
     text-decoration: none;
     color: white;
@@ -255,6 +271,11 @@ a:link, a:visited {
 
 .nav-link:hover, .link:hover {
     color:rgb(0, 105, 79);
+    text-decoration: none;
+}
+
+.skillsLink:hover {
+    color:rgb(109, 208, 183);
     text-decoration: none;
 }
 
