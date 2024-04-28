@@ -1,4 +1,5 @@
 ## NB! Vaadake INFO.txt faili.
+Tehtud: 28.04.2024 20:56
 
 # iseseisev-too-23-04
 Iseseisev töö 23.04 tunni asendamiseks
