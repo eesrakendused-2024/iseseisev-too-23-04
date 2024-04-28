@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    color: black; 
+}
+
+.s1 {
+    background: url('../pildid/1.png');
+    background-size: cover;
+    h1 {
+        font-size: 2cm;
+        text-align: center;
+        color: black; 
+    }
+    h2 {
+        text-align: center;
+    }
+    h1:hover{
+        color: rgba(72, 38, 75, 0.401);
+        text-shadow: 0 0 10px plum;
+        transition: 1s;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.s2 {
+    background: url('../pildid/2.png');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slide {
+    text-align: center;
+}
+
+
+.s3 {
+    background: url('../pildid/3.png');
+    background-size: cover;
+    h1 {
+        font-size: 2cm;
+        text-align: center;
+        color: black; 
+    }
+}
+
+.fp-tooltip {
+    color: black !important;
+    font-family: 'Times New Roman', Times, serif !important;
+
+}
+
+.pics {
+    width: 500px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: .2s;
+    transition-timing-function: ease;
+}
+
+.picture {
+    transform-origin: 0% 10%;
+}
+
+.picture:hover {
+    transform: scale(1.2, 1.2);
+}
