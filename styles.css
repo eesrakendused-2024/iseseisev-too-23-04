@@ -81,7 +81,16 @@
     padding: 5px;
 }
 
-
+#section6 {
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    border: 1px solid white;
+}
 
 #menu {
     position: fixed;
@@ -102,4 +111,9 @@
 #menu ul li a {
     text-decoration: none;
     color: #333;
+}
+
+#inFront{
+    position: relative;
+    z-index: 1;
 }

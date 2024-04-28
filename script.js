@@ -5,7 +5,7 @@ new fullpage('#fullpage', {
   sectionsColor : ['gold', 'black', 'white', '#fec304'],
   navigation: true,
   slidesNavigation: true,
-  anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage','fifthPage','sixthPage','finalPage'],
-  navigationTooltips: ['Avaleht', 'Oskused', 'Programeerimistööd','Hobid'],
+  anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage','fifthPage','sixthPage'],
+  navigationTooltips: ['Avaleht', 'Oskused', 'Programeerimistööd','Hobid','Snake'],
   menu: '#myMenu'
 });

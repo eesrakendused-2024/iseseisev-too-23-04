@@ -7,14 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hugo Luca Tigane</title>
 
+    <!--fullpage-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.17/fullpage.min.css" 
     integrity="sha512-JIWkx/Vz4qw2gIbB6CCH0f8TdElaUt22FCIIytW9C792hpBivsgmsBqoIMtlDTbqLI9mCA+PXw4/v6BCRLbtKw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
+    
     <link rel="stylesheet" href="styles.css"/>
+
 </head>
 <body>
-
+    
     <div id="fullpage">
         <div id="menu">
             <ul>
@@ -24,20 +27,38 @@
                 <li data-menuanchor="fourthPage"><a href="#fourthPage">Minu hobid</a></li>
                 <li data-menuanchor="fifthPage"><a href="#fifthPage">Minu lemmikmuusika</a></li>
                 <li data-menuanchor="sixthPage"><a href="#sixthPage">Snake</a></li>
-                <li data-menuanchor="finalPage"><a href="#finalPage">Final Page</a></li>
             </ul>
         </div>
         
         
         <div class="section">
-            <h1>Hugo Luca Tigane</h1>
-            <h4>Kontaktandmed</h4>
-            <p>Gmail: hugolucatigane@gmail.com</p>
-            <p>Discord: hugolt.</p>
+            <!--Vanta-->
+            <script src="three.r134.min.js"></script>
+            <script src="vanta.rings.min.js"></script>
+            <script>
+            VANTA.RINGS({
+            el: ".section",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: window.innerHeight,
+            minWidth: window.innerWidth,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xffffff
+            })
+            </script>
+            <div id="inFront">
+                <h1>Hugo Luca Tigane</h1>
+                <h4>Kontaktandmed</h4>
+                <p>Gmail: hugolucatigane@gmail.com</p>
+                <p>Discord: hugolt.</p>
+            </div>
         </div>
         <div class="section">
             <div class="slide" id="piano">
-                <h1 id="header2">Minu Oskused</h1>Klaveri mängimine
+                <h1 id="header2">Minu Oskused</h1>
+                <p id="header2">Klaveri mängimine</p>
             </div>
             <div class="slide" id="programming">
                 Programeerimine
@@ -49,24 +70,52 @@
         <div class="section" id="section3">
             <h2 id="s3title">Minu programeerimistööd</h2>
             <hr>
+            <!--masonry-->
+            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
             <br>
             <div id="pictures">
-                <div class="image-container">
-                    <div class="text">Arkaadiline 2d võidusõdu mäng</div>
-                    <img src="./images/image_2024-04-27_204951570.png" alt="Picture of a 2d racing game" /> 
+                <div class="image-container" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+                    <div class="grid-item">Arkaadiline 2d võidusõdu mäng</div>
+                    <img class="grid-item" src="./images/image_2024-04-27_204951570.png" alt="Picture of a 2d racing game" /> 
                 </div>
-                <div class="image-container">
-                    <div class="text">Leht erinevate jookide ostmiseks</div>
-                    <img src="./images/image_2024-04-27_183728018.png" alt="Picture of a basic website" />
+                <div class="image-container" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+                    <div class="grid-item">Leht erinevate jookide ostmiseks</div>
+                    <img class="grid-item" src="./images/image_2024-04-27_183728018.png" alt="Picture of a basic website" />
                 </div>
             </div>
             <hr>
             <a href="https://github.com/HugoLucaT">Link minu Githubi</a>
         </div>
-        <div class="section" id="section4">Minu hobid</div>
-        <div class="section" id="section5">Lemmik muusikalist</div>
-        <div class="section" id="section6"></div>
-        <div class="section" id="section7">Some section</div>
+        <div class="section" id="section4">
+            <!--choreographer-->
+            <script src="choreographer.min.js"></script>
+            <script src="choreo.js" defer></script>
+            <div id="text">
+                <h2>Minu hobid</h2>
+                <p>Jalgpall</p>
+                <p>Videomängud</p>
+                <p>Raamatute lugemine</p>
+                <p>Filmide vaatamine</p>
+                <p>Klaveri mängimine</p>
+                <p>Kooris laulmine</p>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <h3>Lemmik muusikalist</h3>
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/videoseries?si=TI5e2QtURP-V0zI1&amp;list=PLfVa51V4JbrhxRzg8ZjTCuwISWmiN8jLL"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="section" id="section6">
+            <h3>Snake</h3>
+            <p>W,A,S,D liikumiseks</p>
+            <canvas width="400" height="400" id="game"></canvas>
+            <script src="game.js" defer></script>
+            <br>
+            <a href="https://gist.github.com/ZiKT1229/5935a10ce818ea7b851ea85ecf55b4da">Githubi link mängu scripti</a>
+        </div>
+    
     </div>
     <p>easter egg</p>
 
