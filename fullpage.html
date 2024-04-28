@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lehekülg</title>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="fullpage.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="fslightbox.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fullpage.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css">
+    
+</head>
+<body>
+
+    <div id="fullpage">
+
+        <div class="section s0">
+            <div class="openPage">
+                <div class="textContainer">
+                    <h1 class="title">Ester Ojala</h1>
+                    <ul id="myMenu" class="nav nav-pills">
+                        <li data-menuanchor="secondPage" class="nav-item">
+                            <a class="nav-link" href="#Oskused">Oskused</a>
+                        </li>
+                        <li data-menuanchor="thirdPage" class="nav-item">
+                            <a class="nav-link" href="#Kontakt">Kontakt</a>
+                        </li>
+                        <li data-menuanchor="forthPage" class="nav-item">
+                            <a class="nav-link" href="#Tood">Tööd</a>
+                        </li>
+                        <li data-menuanchor="fifthPage" class="nav-item">
+                            <a class="nav-link" href="#Hobid">Hobid</a>
+                        </li>
+                        <li data-menuanchor="sixthPage" class="nav-item">
+                            <a class="nav-link" href="#Muusika">Muusika</a>
+                        </li>
+                        <li data-menuanchor="seventhPage" class="nav-item">
+                            <a class="nav-link" href="#Mang">Mäng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section s1">
+            
+            <div class="slide sl0">
+                <h1 class="header">Ma oskan...</h1>
+                <div class="chart">
+                    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                </div>
+                <div class="skillsText"><a class= "skillsLink" href="#Oskused/1">Illustreeritud slaididel → </a></div>
+            </div>
+
+            <div class="slide sl1">
+                <div class="pageContainer">
+                    <div class="textElement">
+                        <h1 class="text">Teha vahvleid</h1>
+                    </div>
+                    <div class="imgElement">
+                        <a data-fslightbox="first-lightbox" href="img/vahvlid.jpg" class="enter-full-screen">
+                            <img id="pic1" src="img/vahvlid.jpg" alt="vahvlid">
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="slide sl2">
+                <div class="pageContainer">
+                    <div class="textElement">
+                        <h1 class="text">Teha ilusaid pilte</h1>
+
+                    </div>
+                    <div class="imgElement">
+                        <div id="pics">
+                            <a data-fslightbox="first-lightbox" href="img/pilt1.jpg" class="enter-full-screen">
+                                <img id="pic2" src="img/pilt1.jpg" alt="pilt1">
+                            </a>
+                            <a data-fslightbox="second-lightbox" href="img/pilt2.jpg" class="enter-full-screen">
+                                <img id="pic3" src="img/pilt2.jpg" alt="pilt2">
+                            </a>
+                            <a data-fslightbox="third-lightbox" href="img/pilt3.jpg" class="enter-full-screen">
+                                <img id="pic4" src="img/pilt3.jpg" alt="pilt3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="slide sl3">
+                <div class="pageContainer">
+                    <div class="textElement">
+                        <h1 class="text">Mängida jengat</h1>
+                    </div>
+                    <div class="imgElement">
+                        <a data-fslightbox="first-lightbox" href="img/jenga.jpg" class="enter-full-screen">
+                            <img id="pic5" src="img/jenga.jpg" alt="jenga">
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+
+        <div class="section s2">
+            <div class="contactContainer">
+                <div class="contactWord">
+                    <h1>Kontakt</h1>
+                </div>
+                <div class="contactInfo">
+                    <p>Ester Ojala</p>
+                    <div>
+                        <a class="link" href="https://github.com/esteroja/iseseisev-too-23-04" target="_blank">Github</a>
+                    </div>
+                    <p>E-mail: esteroja@tlu.ee</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section s3">
+            <h1  class="header">Tööde slaidid</h1>
+            <div class="slide">
+                <div class="thumbnail">
+                    <a class="link" href="https://www.tlu.ee/~esteroja/Eesrakendused/ER_kell/clock.html">
+                        <h3>Kell</h3>
+                        <img src="img/kell.jpg" alt="Projekt 'Kell'">
+                    </a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="thumbnail">
+                    <a class="link" href="http://greeny.cs.tlu.ee/~estjala/eesrakendused/typer.html">
+                        <h3>Mäng Typeriga (greeny)</h3>
+                        <img src="img/typer.jpg" alt="Projekt 'Mäng'">
+                    </a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="thumbnail">
+                    <a class="link" href="https://www.tlu.ee/~esteroja/Eesrakendused/6_190324/gallery.html">
+                        <h3>Galerii</h3>
+                        <img src="img/mariokartgalerii.jpg" alt="Projekt 'Galerii'">
+                    </a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="thumbnail">
+                    <a class="link" href="https://www.tlu.ee/~esteroja/Eesrakendused/5_120324/todo.html">
+                        <h3>To-do list</h3>
+                        <img src="img/todolist.jpg" alt="Projekt 'To-do list'">
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+        <div class="section s4">
+            <h1 class="header">Hobid</h1>
+            <p class="hobbyText">Liiguta kursorit nuppudel, et näha hobisid!</p>
+            <div class="my-tooltip tooltip"> 
+                <button id="t1" class="my-btn btn tippy">HOBI nr 1</button>
+                <button id="t2" class="my-btn btn tippy">HOBI nr 2</button>
+                <button id="t3" class="my-btn btn tippy">HOBI nr 3</button>
+            </div>
+        </div>
+
+        <div class="section s5">
+            <h1 class="header">Muusika slaidid</h1>
+            <div class="slide">
+                <div class="musicContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/08pcWuLmCHA?si=sr76GOR1-N4s08TT" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="musicContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F0Lre8hdt_k?si=2q3BZVCSV1zAQ6eK" 
+                    allowfullscreen></iframe>
+                </div>
+            </div> 
+
+            <div class="slide">
+                <div class="musicContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JXhPMOW6cIk?si=pMwhFHrR1wht6X18" 
+                    allowfullscreen></iframe>
+                </div>
+            </div> 
+
+        </div>
+
+        <div class="section s6">
+            <h1 class="header">Mäng</h1>
+            <div class="game">
+                <div class="gameContainer">
+                    <iframe width="560" height="315" 
+                    src="https://www.codingnepalweb.com/demos/build-hangman-game-html-javascript/" ></iframe>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    
+    <script>
+
+        new tippy('#t1', {
+            content: "Mario Karti mängimine",
+            placement:'top',
+    		animation:'scale',
+            theme:'light'
+        });
+
+        new tippy('#t2', {
+            content: "Ristsõnade tegemine",
+            placement:'bottom',
+            animation:'scale',
+            theme:'light'
+        });
+
+        new tippy('#t3', {
+            content: "Heegeldamine",
+            placement:'right',
+            animation:'scale',
+            theme:'light'
+        })
+
+        const xValues = ["Teha vahvleid", "Teha ilusaid pilte", "Mängida jengat"];
+        const yValues = [7, 10, 4];
+        const barColors = ["pink", "cyan","teal"];
+
+        new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            title: {
+            display: true,
+            text: "Estri oskused"
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+            
+        }
+        });
+
+    </script>
+
+</body>
+</html>
