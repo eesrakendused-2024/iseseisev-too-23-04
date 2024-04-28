@@ -1,0 +1,209 @@
+.topnav {
+  background-color:  violet;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ff7b91;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #b97aaf;
+  color: white;
+}
+.s1 {
+  background: url('pildid/pilt1.jpeg'); /* Adjusted path */
+  background-size: cover;
+
+}
+
+.s1 h1 {
+  text-align: center;
+  font-family:'Gill Sans'/*, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif*/;
+  font-size: 4em;
+}
+
+.s2 {
+  background: url('pildid/pilt3.jpeg'); /* Adjusted path */
+  background-size: cover;
+  
+  h1 {
+    padding-left: 20px;
+    text-align: left;
+    
+    font-size: 4rem;
+  }
+
+}
+
+.s3 {
+  background: url('pildid/pilt2.jpg'); /* Adjusted path */
+  background-size: cover;
+
+ /* h1 {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 2em;
+  }*/
+}
+
+
+.s4 {
+  background: url('pildid/pilt1.jpeg'); /* Adjusted path */
+  background-size: cover;
+  padding-left: 20px;
+ 
+}
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.img-container a {
+  width: 48%; /* Adjust as needed */
+}
+
+.img-container img {
+  width: 80%;
+  height: auto;
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+
+
+
+.s5 {
+  background: url('pildid/pilt2.jpg'); /* Adjusted path */
+  background-size: cover;
+  margin-top: 50px;
+}
+.hobby-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby {
+  position: relative;
+  margin: 10px;
+}
+
+.hobby-image {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+}
+
+.hobby-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+  border-radius: 10px; /* Add rounded edges */
+  font-family: 'Gill Sans';
+}
+
+.hobby:hover .hobby-title {
+  opacity: 1;
+}
+
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Make sure the section takes the full viewport height */
+}
+
+
+.s5 {
+  background: url('pildid/pilt2.jpg'); /* Adjusted path */
+  background-size: cover;
+}
+
+span {
+  background: white !important;
+}
+
+.fp-slidesNav.fp-bottom {
+  margin-left: 1em !important;
+}
+
+
+.slide {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text */
+}
+
+
+h1 {
+  margin-bottom: 20px; /* Add space between text and image */
+}
+
+.image1 {
+  max-width: 50%; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image2 {
+  max-width: 50%; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image3 {
+  max-width: 70%; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.s6 {
+  background: url('pildid/pilt3.jpeg'); /* Adjusted path */
+  background-size: cover;
+
+}
+
+.musicContainer iframe{
+    width: 100%;
+    height: 315px;
+}
+
+.s7 {
+  background: url('pildid/pilt1.jpeg'); /* Adjusted path */
+  background-size: cover;
+}
+

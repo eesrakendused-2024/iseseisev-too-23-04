@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+     <link rel="stylesheet" href="fullpage.css">
+     <script src="fullpage.js" defer></script>
+     <script src="http://www.youtube.com/iframe_api"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="game.js" defer></script>
+    <link rel="stylesheet" href="game.css">
+
+</head>
+<body>
+   
+  <div id="fullpage">
+
+    <div class="section s1" id="home">
+      <h1>Kryslin Rass</h1>
+
+      <div class="topnav">
+        <a class="active" href="#section1">Kodu</a>
+        <a href="#section2">Oskused</a>
+        <a href="#section3">Kontakt</a>
+        <a href="#section4">Tehtud tööd</a>
+        <a href="#section5">Hobid</a>
+        <a href="#section6">Muusika</a>
+        <a href="#section7">Mäng</a>
+      </div>
+  </div>
+  
+        <div class="section s2" id="skills">
+            <h1>Oskused</h1>
+        
+            <div class="slide">
+                <h1>Flööt ja laul</h1> 
+                <img src="pildid/laulfloot.jpeg" alt="mina laulmas" class="image1">
+            </div>
+            <div class="slide">
+                <h1>Klaver</h1> 
+                <img src="pildid/klaver.jpeg" alt="klaver" class="image2">
+            </div>
+            <div class="slide">
+                <h1>Ruubikukuubik</h1> 
+                <img src="pildid/ruubik.jpeg" alt="Ruubikukuubik" class="image3">
+            </div>
+        </div>
+        
+        
+        <div class="section s3" id="contact">
+            <div class="contact-content">
+                <h1>Kontakt</h1>
+                <p>Email: kryslinr@tlu.ee</p>
+                <p id="githubLink" style="color: blue; text-decoration: underline; cursor: pointer;">GitHub</p>
+            </div>
+        </div>
+        
+        
+        <script>
+            var githubLink = document.getElementById("githubLink");
+            
+            githubLink.addEventListener("click", function() {
+                window.location.href = "https://github.com/kryrass";
+            });
+        </script>
+        
+        
+        
+        <div class="section s4" id="works">
+            <h1>Varasemad programmeerimistööd</h1>
+                <div class="img-container">
+                    <a data-fancybox="gallery" href="pildid/kell.png"><img src="pildid/kell.png"></a>
+                    <a data-fancybox="gallery" href="pildid/mang.png"><img src="pildid/mang.png"></a>
+            </div>
+        </div>
+        
+
+        <div class="section s5" id="hobbies">
+            <h1>Hobid</h1>
+            <div class="hobby-container">
+              <div class="hobby" data-title="Lugemine">
+                <img src="pildid/lugemine.jpg" alt="Lugemine" class="hobby-image">
+              </div>
+              <div class="hobby" data-title="Ristsõnade lahendamine">
+                <img src="pildid/ristsona.jpeg" alt="Ristsõnade lahendamine" class="hobby-image">
+              </div>
+              <div class="hobby" data-title="Rattaga sõitmine">
+                <img src="pildid/rattaga.jpg" alt="Rattaga sõitmine" class="hobby-image">
+              </div>
+            </div>
+          </div>
+          
+          
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+          <div class="section s6" id="playlist">
+            <h1 class="header">Muusika slaidid</h1>
+            <div class="slide">
+                <div class="musicContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AkhC-GIbdrY?si=PqHfSHW29i0_Wbtm" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="musicContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aGOn4F0k7_c?si=t1pPBUN4pn1Tgqhz" 
+                    allowfullscreen></iframe>
+                </div>
+            </div> 
+
+            <div class="slide">
+                <div class="musicContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fj9Cf3lZ4sY?si=SOUBRW9YWS3VPEkY" 
+                    allowfullscreen></iframe>
+                </div>
+            </div> 
+
+        </div>
+
+
+
+        <div class="section s7" id="game">
+            <h1 class="header">kivi-paber-käärid</h1>
+
+            <section class="container">
+                <div class="result_field">
+                  <div class="result_images">
+                    <span class="user_result">
+                      <img src="pildid/rock.png" alt="" />
+                    </span>
+                    <span class="cpu_result">
+                      <img src="pildid/rock.png" alt="" />
+                    </span>
+                  </div>
+                  <div class="result">Let's Play!!</div>
+                </div>
+                <div class="option_images">
+                  <span class="option_image">
+                    <img src="pildid/rock.png" alt="" />
+                    <p>Rock</p>
+                  </span>
+                  <span class="option_image">
+                    <img src="pildid/paper.png" alt="" />
+                    <p>Paper</p>
+                  </span>
+                  <span class="option_image">
+                    <img src="pildid/scissors.png" alt="" />
+                    <p>Scissors</p>
+                  </span>
+                </div>
+              </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+
+</body>
+</html>
+
+
