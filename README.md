@@ -1,5 +1,7 @@
 ## NB! Vaadake INFO.txt faili.
+
 Tehtud: 28.04.2024 20:56
+
 Kristjan Petersell
 
 # iseseisev-too-23-04
