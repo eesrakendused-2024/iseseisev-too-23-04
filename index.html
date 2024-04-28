@@ -7,17 +7,25 @@
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"/> 
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
 </head>
 <body>
   
   <div id="fullpage">
     
-    <div class="section">
+    <div class="section" id="firstSection">
       <h1>Kodutöö 2</h1>
       <p>Kristjan Petersell</p>
       <a href="https://github.com/Sa1tamaMan/iseseisev-too-23-04" target="_blank">Githubi repositoorium</a>
+      <div id="currentDateTime"></div>
       <nav id="nav">
         <ul id="navbar">
           <li data-menuanchor="s1" class="active"><a href="#s1">Avaleht</a></li>
@@ -38,19 +46,19 @@
         </div>
         <div class="slide" id="slide2">
           <h1>Python</h1>
-          <img src="./images/1_m0H6-tUbW6grMlezlb52yw.png"/>
+          <img src="./images/oskused/1_m0H6-tUbW6grMlezlb52yw.png"/>
         </div>
         <div class="slide" id="slide3">
           <h1>Unity C#</h1>
-          <img src="./images/4935906_e520.jpg"/>
+          <img src="./images/oskused/4935906_e520.jpg"/>
         </div>
         <div class="slide" id="slide4">
           <h1>JavaScript</h1>
-          <img src="./images/javascript.jpg"/>
+          <img src="./images/oskused/javascript.jpg"/>
         </div>
         <div class="slide" id="slide5">
           <h1>Mircosoft Office Tools</h1>
-          <img src="./images/office_ipad_icons-212u3lz.jpg"/>
+          <img src="./images/oskused/office_ipad_icons-212u3lz.jpg"/>
         </div>
     </div>
     <div class="section">
@@ -59,15 +67,37 @@
       <p>+372 5555 1234</p>
     </div>
     <div class="section">
-      <h1>Tehtud tööd</h1>
-      <p>Siin on mõned minu tehtud projektid.</p>
+      <div class="eesleht">
+        <br><br><br><br><br><br><br>
+        <h1>Tehtud tööd</h1>
+        <p>Siin on mõned minu tehtud projektid.</p>
+      </div>
+      <div class="too">
+        <br><br><br><br><br><br><br>
+        <h2>Töö nr 1</h2>
+        <p>See on andmebaasi seosega frontendi rakendus, millega võib andmebaasi infot sisestada ja muuta.</p>
+        <img src="./images/tehtudtood/Screenshot 2024-04-28 142108.png">
+      </div>
+      <div class="too">
+        <br><br><br><br><br><br><br>
+        <h2>Töö nr 2</h2>
+        <p>See on pythoni programm, mis loeb failist antud infot ja tagastab keskmise tulemuse koos kõiki nimedega.</p>
+        <img src="./images/tehtudtood/Screenshot 2024-04-28 144724.png">
+        <br><br>
+      </div>
       <div>
         <h2></h2>
       </div>
     </div>
     <div class="section">
-      <h1>Section 5</h1>
-      <p>This is the third section</p>
+      <br><br><br><br><br><br><br>
+      <h1>Hobid</h1>
+      <p>Siin on kõik minu hobid. Nad on jagatud umbes nii kui palju ma nende peale aega kulutan.</p>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <br><br><br><br><br><br><br>
+
     </div>
     <div class="section">
       <h1>Lemmik Muusika</h1>
@@ -93,20 +123,14 @@
       </div>
       <a href='https://neal.fun/perfect-circle/' target="_blank">https://neal.fun/perfect-circle/</a>
     </div>
-    <div class="section">
-      <h1>Section 8</h1>
-      <p>This is the third section</p>
+    <div class="section" id="lastSection">
+      <h1>Info</h1>
+      <p>See veebileht on loodud Tallinna Ülikooli eesrakenduste arendamise kursuse raames.</p>
+      <div id="map"></div>
+      <br>
+      <a href="https://www.tlu.ee" target="_blank">Tallinna Ülikooli veebileht</a>
+      <div id="currentDateTime2"></div>
     </div>
   </div>
-<!--   <script>
-    new fullpage('#fullpage', {
-      anchors: ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8'],
-      navigation: true,
-      menu: "navbar",
-      css3: true
-    });
-  </script> -->
-  
-
 </body>
 </html>

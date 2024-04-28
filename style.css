@@ -38,18 +38,58 @@
   font-family: arial;
 }
 
+.section#firstSection {
+  color: #fff;
+}
+
+.section#firstSection a {
+  color: #fff;
+}
+
+.section#lastSection p {
+  font-size: 1em;
+}
+
 .section h1 {
   font-size: 3em;
 }
 
+.section h2 {
+  font-size: 2.5em;
+}
+
 .section p {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .section a {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .section div.slide img {
   width: 60%;
+}
+
+.section div.too img {
+  width: 60%;
+}
+
+#myChart {
+  margin: 0 auto;
+  width: 40%;
+  height: 40%;
+}
+
+#map { 
+  margin: 0 auto;
+  height: 400px;
+  width: 60%; 
+}
+
+.section #currentDateTime {
+  margin: 20px;
+}
+
+.section #currentDateTime2 {
+  margin: 20px;
 }
