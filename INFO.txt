@@ -1,8 +1,8 @@
 Kasutatud library'd:
 fullpage.js
-...
-...
-...
+Chart.js
+Leaflet
+Moment.js
 
 Tegemise log:
 
@@ -27,6 +27,13 @@ Pushisin githubi kõik muudatused.
 Natuke hiljem jõudsin ka lisada Spotify playlisti 'lemmik muusika' sektsiooni.
 Pushisin uuesti.
 
-28.04.2024 (___)
+28.04.2024 (päeval ja õhtul)
 
-...
+Alustasin uue library lisamisega. Alguses üritasin lisada multiple.js, aga hiljem võtsin selle maha.
+Selle asemel alustasin lisama backgrounde puhta javascripti abil.
+Hiljem alustasin uute librarite lisamisega. 
+Lisasin Chart.js ja tegin kiire charti ära oma hobide sektsiooni.
+Lisasin Leafleti, et info sektsioonis näidata tlü asukohta kaardil.
+Lõpuks, lisasin Moment.js'i aja näitamiseks.
+Korrigeerisin kõike koode ja pushisin githubi.
+(kodutöö sai tehtud)
