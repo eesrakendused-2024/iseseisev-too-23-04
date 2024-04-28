@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <div id="fullPage">
+
+        <div class="section s1">
+
+            <h1>Henri Rihard Pallas</h1>
+            <p>Teretulemast minu kodulehele!</p>
+
+        </div>
+
+        <div class="section s2">
+
+            <div class="slide s2_1">
+                <h1>Minu Oskused</h1>
+            </div>
+
+            <div class="slide s2_2">
+                <h1>Programmeerimine:</h1>
+                <li class="list">Algne Python oskus</li>
+                <li class="list">Algne Javascript oskus</li>
+                <li class="list">Algne HTML oskus</li>
+                <li class="list">Algne CSS oskus</li>
+            </div>
+
+            <div class="slide s2_3">
+                <h1>Teised oskused</h1>
+                <li class="list">Küpsetamis oskus</li>
+                <li class="list">Inglise keele oskus</li>
+                <li class="list">Joonistamis oskus</li>
+            </div>
+
+        </div>
+
+        <div class="section s3">
+            <div class="section3-container">
+            <h1>Minu Hobid</h1>
+            <li class="list">Videomängud</li>
+            <li class="list">Küpsetamine</li>
+            <li class="list">Koomiksite lugemine</li>
+            <li class="list">Programmeerimine</li>
+            </div>
+        </div>
+
+        <div class="section s4">
+            <div class="section4-container">
+                <div class="section4-text-container">
+                    <h1>Muusika</h1>
+                    <p>Natukene muusikat.</p>
+                </div>
+                <iframe class="musiclist" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL5JmbLVokUO3h79ZEd_3tmEzpREsyjFi-&pp=gAQBiAQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="section s5">
+            <div class="section5-container">
+                <div class="section5-text-container">
+                    <h1>Tehtud tööd</h1>
+                    <p>Kell: <a href="https://github.com/HenriPallas/kodutoo-1">github link</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section s6">
+            <div class="section6-container">
+
+                <section class="game">
+                    <!--Title -->
+                    <div class="title">Rock Paper Scissor</div>
+                         
+                        <!--Display Score of player and computer -->
+                    <div class="score">  
+                        <div class="playerScore">
+                            <h2>Player</h2>
+                            <p class="p-count count">0</p>
+                 
+                        </div>       
+                        <div class="computerScore">
+                            <h2>Computer</h2>
+                            <p class="c-count count">0</p>
+                 
+                        </div>
+                    </div>
+                       
+                    <div class="move">Choose your move</div>
+                         
+                        <!--Number of moves left before game ends -->
+                    <div class="movesleft">Moves Left: 10 </div>
+                         
+                        <!--Options available to player to play game -->
+                    <div class="options">
+                        <button class="rock">Rock</button>
+                        <button class="paper">Paper</button>
+                        <button class="scissor">Scissors</button>    
+                    </div>
+                         
+                        <!--Final result of game -->
+                    <div class="result"></div>
+                         
+                        <!--Reload the game -->
+                    <button class="reload"></button>
+
+                    <div>
+                        <p class="source"><a href="https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/">Source</a></p>
+                    </div>
+                 
+                </section>
+                 
+                <script src="rps.js"></script>
+            </div>
+        </div>
+
+        <div class="section s7">
+            <div class="section7-container">
+                <div class="section7-text-container">
+                    <h1>Kontaktinfo</h1>
+                    <p>E-post: hrp1609@tlu.ee</p>
+                    <p>Telefon: 53532626</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        new fullpage('#fullPage',{
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['section1', 'section2', 'section3'],
+            navigationTooltips: ['Pealeht', 'Oskused', 'Hobid', 'Muusika', 'Tehtud tööd', 'Lihtne mäng', 'Kontaktinfo'],
+            showActiveTooltip: true,
+            scrollingSpeed: 1000,
+            controlArrows: false,
+            slidesNavigation: true
+        })
+
+    </script>
+
+</body>
+</html>
