@@ -1,3 +1,4 @@
+//Võetud granim näitest, muutsin ainult isPausedWhenNotInView: , et töötaks fullPage'iga
 var granimInstance = new Granim({
     element: '#canvas-basic',
     direction: 'left-right',
