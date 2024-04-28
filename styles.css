@@ -1,0 +1,119 @@
+.section {
+    text-align: center;
+    font-size: 3em;
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+#piano {
+    background-image: url("./images/1338175.png");
+}
+
+#programming {
+    background-image: url("./images/photo-1542831371-29b0f74f9713.avif");
+    color: white;
+    background-position: center;
+}
+
+#bike {
+    background-image: url("./images/bw1.jpg");
+    color: white;
+}
+
+#header2{
+    color: white;
+}
+
+.left-list {
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.left-list li {
+    padding-left: 20px;
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
+}
+
+
+#menu-header{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#programs{
+    display: flex;
+}
+
+/*#s3title{
+    margin-top: -20px
+}*/
+
+#pictures {
+    display: flex;
+}
+
+#pictures img {
+    height: auto;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.image-container {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.text {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    padding: 5px;
+}
+
+#section6 {
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    border: 1px solid white;
+}
+
+#menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#inFront{
+    position: relative;
+    z-index: 1;
+}
