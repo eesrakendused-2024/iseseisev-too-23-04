@@ -1,0 +1,152 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.section {
+  padding: 60px 80px;
+  background-size: cover;
+}
+
+.fp-overflow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-height: 300px;
+}
+
+a {
+  color: antiquewhite;
+  transition: color 0.24s ease-out;
+}
+a:hover {
+  color: rgba(250, 235, 215, 0.6);
+}
+
+h1 {
+  margin: 0 0 60px 0;
+  font-size: 56px;
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 8px 16px;
+  flex-wrap: wrap;
+}
+.nav a {
+  display: block;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid antiquewhite;
+  text-decoration: none;
+  border-radius: 32px;
+  transition: all 0.24s ease-out;
+}
+.nav a:hover {
+  background: antiquewhite;
+  color: black;
+}
+
+.personal {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid antiquewhite;
+  text-decoration: none;
+  border-radius: 32px;
+  transition: all 0.24s ease-out;
+}
+.button:hover {
+  background: antiquewhite;
+  color: black;
+}
+
+#s1 {
+  background-image: url("../images/one.jpg");
+}
+
+#s2 {
+  background-image: url("../images/two.jpg");
+}
+
+#s3 {
+  background-image: url("../images/three.jpg");
+}
+
+#s4 {
+  background-image: url("../images/four.jpg");
+}
+
+#s5 {
+  background-image: url("../images/five.jpg");
+}
+
+#s6 {
+  background-image: url("../images/six.jpg");
+}
+
+#s7 {
+  background-image: url("../images/seven.jpg");
+}
+
+#s8 {
+  background: black;
+}
+
+#fp-nav span, #fp-slidesNav span {
+  background: rgb(68, 67, 68) !important;
+}
+
+.fp-slidesNav.fp-bottom {
+  text-align: center;
+}
+
+.fp-slidesNav ul li a span {
+  background: white;
+  opacity: unset;
+}
+
+canvas {
+  background: antiquewhite;
+}
+
+#canvas-holder {
+  position: relative;
+  width: 800px;
+  height: 600px;
+}
+
+.gallery a {
+  height: 200px;
+  width: 300px;
+  margin: 5px;
+}
+
+.gallery a img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gallery a img:hover {
+  transform: scale(1.4);
+}/*# sourceMappingURL=main.css.map */
