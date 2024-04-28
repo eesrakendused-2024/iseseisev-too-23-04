@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullPage.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <style>
+        .section {
+            text-align: center;
+        }
+        .menu-item {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            cursor: pointer;
+        }
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        #code-section {
+            background-color: #333;
+            color: #fff;
+        }
+        #code {
+            padding: 50px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        #hobby{
+            padding: 50px;
+            text-align: center;
+        }
+        canvas {
+        border:1px solid #d3d3d3;
+        background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section" id="home">
+        <h1>FullPage.js Koduleht</h1>
+        <nav id="menu">
+            <span class="menu-item" data-menuanchor="home">Home</span>
+            <span class="menu-item" data-menuanchor="about">About</span>
+            <span class="menu-item" data-menuanchor="contact">Contact</span>
+            <span class="menu-item" data-menuanchor="code">Code</span>
+            <span class="menu-item" data-menuanchor="hobby">Hobby</span>
+            <span class="menu-item" data-menuanchor="songs">Songs</span>
+            <span class="menu-item" data-menuanchor="game">Game</span>
+        </nav>
+    </div>
+    <div class="section" id="about">
+        <div class="slider">
+            <div>
+                <h2>Minu kohta</h2>
+                <p>Ma olen Albert Berkman, olen 19 aastane ja õppin Tallinna Ülikoolis informaatikat. Ma oskan programeerida eri keeltes nagu: Python, CSS, HTML, Java, Typescript, C#, Lua</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2>Minu kontaktandmed</h2>
+        <p>Email: ABerkman@tlu.ee</p>
+        <p>GitHub: ABerkman04</p>
+    </div>
+    <div class="section" id="code-section">
+        <h2>Minu loodud HTML kood</h2>
+        <pre id="code">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;title&gt;Albert Berkman, veebiprogrammeerimine 2023&lt;/title&gt;
+                &lt;script src="first.js" defer&gt;&lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;img src="/banner/banner.png" alt="veebiprogrammeerimise kursuse banner"&gt;
+                &lt;h1&gt;Inimese üleriide värv&lt;/h1&gt;
+                &lt;p&gt;See leht on loodud &lt;a href="https://www.tlu.ee" target="_blank"&gt;TLÜ&lta;/a&gt; Digitehnoloogiate instituudis eksami raames.&lt;/p&gt;
+                &lt;hr&gt;
+                &lt;p&gt;Kursus, mille raames leht tehti on: veebiprogrammeerimine. &lt;/p&gt;
+                &lt;hr&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="/addperson"&gt;Lisa uus inimene&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;hr&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </div>
+    <div class="section" id="hobby">
+        <h2>Minu hobid</h2>
+        <p>Ardvinoga robotote ehitamine</p>
+        <p>Unity kaudu mängude programeerimine</p>
+        <p>Droonidega lendamine</p>
+        <p>Olen mänginud ka malet</p>
+    </div>
+
+    <div class="section" id="songs">
+        <h2>List lemmikmuusikaga</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/playlist?list=PLMC9KNkIncKtPzgY-5rmhvj7fax8fdxoj" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="section" id="game">
+        <h2>Arva ära õige number</h2>
+        <p>Mängu tegija on ChatGPT</p>
+        <p>Arva ära arv vahemikus 1 kuni 100;</p>
+        <input type="number" id="guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    
+    <script>
+        // Generate a random number between 1 and 100
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        console.log("Random number:", randomNumber);
+    
+        // Function to check the guess
+        function checkGuess() {
+            // Get the user's guess
+            const userGuess = parseInt(document.getElementById("guess").value);
+            
+            // Compare the guess with the random number
+            if (userGuess === randomNumber) {
+                showMessage("Congratulations! You guessed the correct number.");
+            } else if (userGuess < randomNumber) {
+                showMessage("Try a higher number.");
+            } else {
+                showMessage("Try a lower number.");
+            }
+        }
+    
+        // Function to display a message
+        function showMessage(message) {
+            document.getElementById("message").innerText = message;
+        }
+    </script>
+    
+    
+    
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        // Nav
+        menu: '#menu',
+        anchors: ['home', 'about', 'contact', 'code', 'hobby', 'songs', 'game'], // Added 'code' anchor
+        navigation: true,
+        // Scrol
+        autoScrolling: true,
+        scrollingSpeed: 800,
+        // Design
+        sectionsColor: ['#f2f2f2', '#e6e6e6', '#ccc', '#333'], // Added color for code section
+        afterLoad: function(origin, destination, direction) {
+            console.log('Section loaded: ' + destination.index);
+        }
+    });
+</script>
+</body>
+</html>
