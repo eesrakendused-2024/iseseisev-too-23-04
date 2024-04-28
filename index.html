@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koduleheke</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="fullPage">
+
+        <div class="section s1">
+            <h1>Õnnela Link</h1>
+            <h2>Esimese kursuse informaatika tudeng</h2>
+            <p>Siit leiad ka minu <a href="https://github.com/onnelaa/eesrakendused" target="_blank">Githubi</a></p>
+        </div>
+
+        <div class="section s2">
+            <div class="slide">
+                <h2>Tehtud tööd</h2>
+                <img src="../pildid/kodutoo1.png" alt="Kodutöö 1" class="pics picture">
+                <img src="../pildid/kodutoo2.png" alt="Kodutöö 2" class="pics picture">
+                <img src="../pildid/kodutoo3.png" alt="Kodutöö 3" class="pics picture">
+                <img src="../pildid/kodutoo4.png" alt="Kodutöö 4" class="pics picture">
+            </div>
+
+            <div class="slide">
+
+                <h2>Minu hobideks on raamatute lugemine, reisimine ja elu nautimine :]</h2>
+            </div>
+
+            <div class="container">
+                <div class="slide">
+                    <h2>Muusika</h2>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VjHMDlAPMUw?si=gquvQM42e-YuLKTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section s3">
+            <h1>Tic-Tac-Toe</h1>
+            <div id="gameContainer">
+                <table id="board">
+                    <tr>
+                        <td onclick="makeMove(0, 0)"></td>
+                        <td onclick="makeMove(0, 1)"></td>
+                        <td onclick="makeMove(0, 2)"></td>
+                    </tr>
+                    <tr>
+                        <td onclick="makeMove(1, 0)"></td>
+                        <td onclick="makeMove(1, 1)"></td>
+                        <td onclick="makeMove(1, 2)"></td>
+                    </tr>
+                    <tr>
+                        <td onclick="makeMove(2, 0)"></td>
+                        <td onclick="makeMove(2, 1)"></td>
+                        <td onclick="makeMove(2, 2)"></td>
+                    </tr>
+                </table>
+                <p id="status"></p>
+                <button id="resetButton" onclick="resetGame()">Restart</button>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            navigationTooltips: ['Minust', 'Detailid', 'Mäng'],
+            controlArrows: false,
+            slidesNavigation: true
+        })
+
+    </script>
+
+</body>
+</html>
