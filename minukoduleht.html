@@ -228,7 +228,7 @@
       }
 
       function restartGame(event) {
-        event.stopPropagation(); // Предотвращаем всплытие события, чтобы оно не достигало обработчика событий fullPage.js
+        event.stopPropagation();
         clearInterval(gameInterval); 
         gameActive = false; 
         score = 0;
