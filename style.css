@@ -1,0 +1,95 @@
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: arial;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar li a {
+  color: darkgray;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+#navbar li a.selected {
+  color: #fff;
+}
+
+#navbar li a:hover {
+  color: gray;
+}
+
+.section {
+  text-align: center;
+  font-family: arial;
+}
+
+.section#firstSection {
+  color: #fff;
+}
+
+.section#firstSection a {
+  color: #fff;
+}
+
+.section#lastSection p {
+  font-size: 1em;
+}
+
+.section h1 {
+  font-size: 3em;
+}
+
+.section h2 {
+  font-size: 2.5em;
+}
+
+.section p {
+  font-size: 2em;
+}
+
+.section a {
+  font-size: 1em;
+}
+
+.section div.slide img {
+  width: 60%;
+}
+
+.section div.too img {
+  width: 60%;
+}
+
+#myChart {
+  margin: 0 auto;
+  width: 40%;
+  height: 40%;
+}
+
+#map { 
+  margin: 0 auto;
+  height: 400px;
+  width: 60%; 
+}
+
+.section #currentDateTime {
+  margin: 20px;
+}
+
+.section #currentDateTime2 {
+  margin: 20px;
+}

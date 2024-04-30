@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullpage veebileht</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+</head>
+<body>
+  
+  <div id="fullpage">
+    
+    <div class="section" id="firstSection">
+      <h1>Kodutöö 2</h1>
+      <p>Kristjan Petersell</p>
+      <a href="https://github.com/Sa1tamaMan/iseseisev-too-23-04" target="_blank">Githubi repositoorium</a>
+      <div id="currentDateTime"></div>
+      <nav id="nav">
+        <ul id="navbar">
+          <li data-menuanchor="s1" class="active"><a href="#s1">Avaleht</a></li>
+          <li data-menuanchor="s2"><a href="#s2">Minu oskused</a></li>
+          <li data-menuanchor="s3"><a href="#s3">Kontakt Andmed</a></li>
+          <li data-menuanchor="s4"><a href="#s4">Tehtud Tööd</a></li>
+          <li data-menuanchor="s5"><a href="#s5">Hobid</a></li>
+          <li data-menuanchor="s6"><a href="#s6">Lemmik Muusika</a></li>
+          <li data-menuanchor="s7"><a href="#s7">Mäng</a></li>
+          <li data-menuanchor="s8"><a href="#s8">Info</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="section">
+        <div class="slide" id="slide1">
+          <h1>Minu oskused</h1>
+          <p>Navigeeri nooltega, et näha oskusi.</p>
+        </div>
+        <div class="slide" id="slide2">
+          <h1>Python</h1>
+          <img src="./images/oskused/1_m0H6-tUbW6grMlezlb52yw.png"/>
+        </div>
+        <div class="slide" id="slide3">
+          <h1>Unity C#</h1>
+          <img src="./images/oskused/4935906_e520.jpg"/>
+        </div>
+        <div class="slide" id="slide4">
+          <h1>JavaScript</h1>
+          <img src="./images/oskused/javascript.jpg"/>
+        </div>
+        <div class="slide" id="slide5">
+          <h1>Mircosoft Office Tools</h1>
+          <img src="./images/oskused/office_ipad_icons-212u3lz.jpg"/>
+        </div>
+    </div>
+    <div class="section">
+      <h1>Kontakt Andmed</h1>
+      <p>email@email.com</p>
+      <p>+372 5555 1234</p>
+    </div>
+    <div class="section">
+      <div class="eesleht">
+        <br><br><br><br><br><br><br>
+        <h1>Tehtud tööd</h1>
+        <p>Siin on mõned minu tehtud projektid.</p>
+      </div>
+      <div class="too">
+        <br><br><br><br><br><br><br>
+        <h2>Töö nr 1</h2>
+        <p>See on andmebaasi seosega frontendi rakendus, millega võib andmebaasi infot sisestada ja muuta.</p>
+        <img src="./images/tehtudtood/Screenshot 2024-04-28 142108.png">
+      </div>
+      <div class="too">
+        <br><br><br><br><br><br><br>
+        <h2>Töö nr 2</h2>
+        <p>See on pythoni programm, mis loeb failist antud infot ja tagastab keskmise tulemuse koos kõiki nimedega.</p>
+        <img src="./images/tehtudtood/Screenshot 2024-04-28 144724.png">
+        <br><br>
+      </div>
+      <div>
+        <h2></h2>
+      </div>
+    </div>
+    <div class="section">
+      <br><br><br><br><br><br><br>
+      <h1>Hobid</h1>
+      <p>Siin on kõik minu hobid. Nad on jagatud umbes nii kui palju ma nende peale aega kulutan.</p>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <br><br><br><br><br><br><br>
+
+    </div>
+    <div class="section">
+      <h1>Lemmik Muusika</h1>
+      <p>See on minu Spotify playlist minu lemmik muusikaga.</p>
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/playlist/0F23FshyHATSVawpYPfi3O?utm_source=generator&theme=0" 
+        width="80%" 
+        height="400" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+      </iframe>
+    </div>
+    <div class="section">
+      <h1>Mäng: draw a perfect circle</h1>
+      <div id="game">
+        <iframe src="https://neal.fun/perfect-circle/" 
+          width="80%" 
+          height="600px"
+          frameborder="0">
+        </iframe>
+      </div>
+      <a href='https://neal.fun/perfect-circle/' target="_blank">https://neal.fun/perfect-circle/</a>
+    </div>
+    <div class="section" id="lastSection">
+      <h1>Info</h1>
+      <p>See veebileht on loodud Tallinna Ülikooli eesrakenduste arendamise kursuse raames.</p>
+      <div id="map"></div>
+      <br>
+      <a href="https://www.tlu.ee" target="_blank">Tallinna Ülikooli veebileht</a>
+      <div id="currentDateTime2"></div>
+    </div>
+  </div>
+</body>
+</html>
