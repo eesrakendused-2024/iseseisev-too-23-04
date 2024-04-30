@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
+    integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css"
+    integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    #menu li {
+      display: inline-block;
+      margin: 10px;
+      color: #000;
+      background: #fff;
+      background: rgba(255, 255, 255, .5);
+      -webkit-border-radius: 10px;
+      border-radius: 10px
+    }
+
+    #menu li.active {
+      background: #666;
+      background: rgba(0, 0, 0, .5);
+      color: #fff
+    }
+
+    #menu li a {
+      text-decoration: none;
+      color: #000
+    }
+
+    #menu li.active a:hover {
+      color: #000
+    }
+
+    #menu li:hover {
+      background: rgba(255, 255, 255, .8)
+    }
+
+    #menu li a,
+    #menu li.active a {
+      padding: 9px 18px;
+      display: block
+    }
+
+    #menu li.active a {
+      color: #fff
+    }
+
+    #menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 40px;
+      z-index: 70;
+      width: 100%;
+      padding: 0;
+      margin: 0
+    }
+
+    .section {
+      text-align: center;
+      font-size: 3em;
+      font-family: arial;
+    }
+
+    .skillsImg {
+      width: 40%;
+      height: 50%;
+    }
+  </style>
+
+  <title>Germo Tael Homepage</title>
+</head>
+
+<body>
+  <ul id="menu">
+    <li data-menuanchor="1Page">
+      <a href="#1Page">Home</a>
+    </li>
+    <li data-menuanchor="2Page">
+      <a href="#2Page">Skills</a>
+    </li>
+    <li data-menuanchor="3Page">
+      <a href="#3Page">Hobbies</a>
+    </li>
+    <li data-menuanchor="4Page">
+      <a href="#4Page">Game</a>
+    </li>
+  </ul>
+
+
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="intro">
+        <h1>Germo Tael</h1>
+        <p>Homepage</p>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class="slide">
+        <h1>Computers</h1>
+        <img class="skillsImg"
+          src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fc9276bb-9822-4c55-2ce8-e9351912e200/original=true/256731.jpeg"
+          alt="computers">
+      </div>
+      <div class="slide active">
+        <h1>Electronics</h1>
+        <img class="skillsImg"
+          src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/fbf22ac5-4cea-4b6c-8038-f9edb3142c5a/original=true/00895-1888830858.jpeg"
+          alt="electronics">
+      </div>
+      <div class="slide">
+        <div>
+          <h1>Robotics</h1>
+          <img class="skillsImg"
+            src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5ff7526c-32a6-4286-a630-24e71bd8c70d/original=true/00176-3854930279.jpeg"
+            alt="robot dog">
+        </div>
+
+      </div>
+    </div>
+    <div class="section">
+      <div>
+        <h1>NONE</h1>
+      </div>
+    </div>
+    <div class="section">
+      <style>
+        .info {
+          height: 8vh;
+        }
+
+        .info>p {
+          position: absolute;
+          margin: 0px;
+          top: -0.5%;
+          color: red;
+          font-size: 3.8vw;
+          font-family: Fantasy;
+
+        }
+
+        .info>p>span {
+          color: LightGreen;
+        }
+
+        .game-window {
+          border: 10px Solid Red;
+          height: 89vh
+        }
+
+        #player {
+          position: absolute;
+          top: 60vh;
+          left: 50vw;
+          height: 37px;
+          width: 5vw;
+        }
+
+        .robo>div {
+          position: absolute;
+          background-color: Yellow;
+          height: 37px;
+          width: 5vw;
+          top: 9vh;
+          border: 2px Solid Red;
+          margin: 0px;
+          z-index: -1;
+        }
+      </style>
+      <a href="https://github.com/naklecha/doodleship">source</a>
+      <div class="game-window">
+        <img id="player" src="https://github.com/naklecha/doodleship/blob/master/ufo.png?raw=true"></img>
+        <div class="robo">
+          <div style='left:3vw;'></div>
+          <div style='left:11vw;'></div>
+          <div style='left:19vw;'></div>
+          <div style='left:27vw;'></div>
+          <div style='left:35vw;'></div>
+          <div style='left:43vw;'></div>
+          <div style='left:51vw;'></div>
+          <div style='left:59vw;'></div>
+          <div style='left:67vw;'></div>
+          <div style='left:75vw;'></div>
+          <div style='left:83vw;'></div>
+          <div style='left:91vw;'></div>
+        </div>
+      </div>
+      <script>
+        var obj = {}; //obj with all keypress functions
+
+        obj.reset = function () {
+          for (i = 0; i < robots.length; i++) {
+            robots[i].style.top = 9 + "vh"
+            curr[i] = 9
+          }
+          d = 60;
+          l = 50;
+          spaceship.style.top = d + "vh";
+          spaceship.style.left = l + "vw";
+          document.querySelector("#score").innerHTML = 0;
+          document.querySelector("#name").innerHTML = prompt("Enter new player name: ");
+        }
+
+        obj.f = function () {
+          a = parseInt(spaceship.style.left)
+          b = parseInt(spaceship.style.top)
+          for (i = 0; i < robots.length; i++) {
+            if ((parseInt(robots[i].style.left) + 5 > a && a > parseInt(robots[i].style.left)) || ((a + 5 > parseInt(robots[i].style.left)) && a < parseInt(robots[i].style.left)) || ((a + 5 <= parseInt(robots[i].style.left) + 5) && a >= parseInt(robots[i].style.left))) {
+              if ((parseInt(robots[i].style.top) + 5 > b) && (b + 5 > parseInt(robots[i].style.top))) {
+                obj.reset();
+                return;
+              }
+            }
+          }
+          k = event.key.toLowerCase();
+          if (k == 's') {
+            if (100 <= d + 7) {
+              obj.reset();
+              return;
+            }
+            d += 2;
+            spaceship.style.top = d + "vh";
+          }
+          else if (k == 'w') {
+            if (d <= 8) {
+              obj.reset();
+              return;
+            }
+            d -= 2;
+            spaceship.style.top = d + "vh";
+          }
+          else if (k == 'd') {
+            if (100 <= l + 6) {
+              obj.reset();
+              return;
+            }
+            l += 2;
+            spaceship.style.left = l + "vw";
+          }
+          else if (k == 'a') {
+            if (l <= 0) {
+              obj.reset();
+              return;
+            }
+            l -= 2;
+            spaceship.style.left = l + "vw";
+          }
+          a = parseInt(spaceship.style.left)
+          b = parseInt(spaceship.style.top)
+          for (i = 0; i < robots.length; i++) {
+            robots[i].style.top = curr[i] + "vh"
+            curr[i] = curr[i] + speeds[i]
+            if (curr[i] >= 94) {
+              curr[i] = 9;
+              k = Math.random() * 7;
+              if (k < 1) {
+                k = 1;
+              }
+              speeds[i] = k;
+              document.querySelector("#score").innerHTML = parseInt(document.querySelector("#score").innerHTML) + 1;
+            }
+          }
+        }
+
+        d = 60;
+        l = 50;
+        robots = document.querySelectorAll(".robo>div");
+        speeds = []
+        for (i = 0; i < robots.length; i++) {
+          k = ((Math.random()) ** 2) * 7;
+          if (k < 1) {
+            k = 1;
+          }
+          speeds[i] = k;
+        }
+        curr = []
+        for (i = 0; i < robots.length; i++) {
+          curr[i] = speeds[i] + 9
+        }
+
+        spaceship = document.querySelector("#player"); //main spaceship
+
+        window.addEventListener("keypress", obj.f, false) //keypress event handler
+      </script>
+    </div>
+  </div>
+
+  <script>
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+      anchors: ['1Page', '2Page', '3Page', '4Page'],
+      navigation: true,
+      navigationTooltips: ['Home', 'Skills', 'Hobbies', 'Game'],
+      showActiveTooltip: true,
+      menu: '#menu',
+      css3: true,
+    });
+  </script>
+</body>
+
+</html>
