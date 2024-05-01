@@ -1,3 +1,5 @@
+// Kood võetud: https://www.codingnepalweb.com/rock-paper-scissors-game-javascript/
+
 // Get  to DOM elements
 const gameContainer = document.querySelector(".container"),
   userResult = document.querySelector(".user_result img"),
