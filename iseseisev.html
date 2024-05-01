@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Minu oskused</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Kontaktandmed</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Kodutööd</a></li>
+    <li data-menuanchor="fourthPage"><a href="#fourthPage">Spotify list</a></li>
+    <li data-menuanchor="fifthPage"><a href="#fifthPage">Hobbies</a></li>
+    <li data-menuanchor="sixthPage"><a href="#sixthPage">Game</a></li>
+  </ul>
+  <div id="fullpage">
+    <div class="section" id="firstPage">
+      <div class="slide">
+        <a id="slider1Link" href="#">Soon 20 years as social science researcher</a>
+      </div>
+      <div class="slide">
+        <a id="slider2Link" href="#">Over five years of experience as IT project manager and CIO</a>
+      </div>
+      <div class="slide">
+        <a id="slider3Link" href="#">Second year biology student with IT as minor at Tallinn University</a>
+      </div>
+      <div class="slide">
+        <a id="slider4Link" href="#">Alumni of Tartu University and TUT joint program of technology teacher</a>
+      </div>
+    </div>
+    <div class="section" id="secondPage" style="background-image: url('https://ls.codetech.nl/shops/273775/files/310323894/image.jpg'); background-size: cover; background-position: center;">
+      <div style="color: white; text-align: center;">
+        <h2>Vanamõisa küla. Saue vald. Harjumaa. Eesti</h2>
+      </div>
+    </div>
+    <div class="section" id="thirdPage">
+      <ul>
+        <li><a id="bullet1Link" href="#">Loomafüsioloogia</a></li>
+        <li><a id="bullet2Link" href="#">Biokeemia</a></li>
+        <li><a id="bullet3Link" href="#">Ökotoksikoloogia</a></li>
+        <li><a id="bullet4Link" href="#">Evolutsiooniteooria</a></li>
+      </ul>
+    </div>
+    <div class="section" id="fourthPage">
+      <iframe src="https://open.spotify.com/embed/playlist/2olme3a1fl78NFWJMscFMd?si=4c32551f4cf2490b" width="100%" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="section" id="fifthPage" style="background-color: green;">
+      <div style="text-align: center;">
+        <h2>My Last Month Hobby: Blog</h2>
+        <p>Visit my Blog <a id="blogLink" href="#">here</a>.</p>
+      </div>
+    </div>
+    <div class="section" id="sixthPage" style="background-color: lightblue;">
+      <div style="text-align: center;">
+        <h2>Game</h2>
+        <p>Earth and Moon, long-lasting partners.</p>
+        <p>Legend: Arrow-Up fastens orbiting and Arrow-Down slows down.</p>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Earth parameters
+    const earth = {
+      x: canvas.width / 2,
+      y: canvas.height / 2,
+      radius: 50,
+      color: 'blue'
+    };
+
+    // Moon parameters
+    const moon = {
+      angle: 0,
+      distance: 200,
+      radius: 20,
+      speed: 0.01,
+      color: 'gray'
+    };
+
+    function draw() {
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw Earth
+      ctx.beginPath();
+      ctx.arc(earth.x, earth.y, earth.radius, 0, Math.PI * 2);
+      ctx.fillStyle = earth.color;
+      ctx.fill();
+
+      // Calculate moon's position
+      const moonX = earth.x + Math.cos(moon.angle) * moon.distance;
+      const moonY = earth.y + Math.sin(moon.angle) * moon.distance;
+
+      // Draw Moon
+      ctx.beginPath();
+      ctx.arc(moonX, moonY, moon.radius, 0, Math.PI * 2);
+      ctx.fillStyle = moon.color;
+      ctx.fill();
+
+      // Update moon's angle
+      moon.angle += moon.speed;
+
+      requestAnimationFrame(draw);
+    }
+
+    // Control moon's speed with arrow keys
+    window.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowUp') {
+        moon.speed += 0.001; // Increase speed
+      } else if (event.key === 'ArrowDown') {
+        moon.speed -= 0.001; // Decrease speed
+      }
+    });
+
+    draw(); // Start animation
+
+    document.getElementById('slider1Link').addEventListener('click', function() {
+        document.getElementById('slider1Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider1" src="https://www.etis.ee/CV/Mait_Rungi/est/#Publikatsioonid" width="100%" height="600" frameborder="0"></iframe>');
+        document.getElementById('slider1Link').remove();
+    });
+
+    document.getElementById('slider2Link').addEventListener('click', function() {
+        document.getElementById('slider2Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider2" src="https://www.etis.ee/CV/Mait_Rungi/est/#Teenistuskaik" width="100%" height="600" frameborder="0"></iframe>');
+        document.getElementById('slider2Link').remove();
+    });
+
+    document.getElementById('slider3Link').addEventListener('click', function() {
+        document.getElementById('slider3Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider3" src="https://www.etis.ee/CV/Mait_Rungi/est/#Publikatsioonid" width="100%" height="600" frameborder="0"></iframe>');
+        document.getElementById('slider3Link').remove();
+    });
+
+    document.getElementById('slider4Link').addEventListener('click', function() {
+        document.getElementById('slider4Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider4" src="https://www.etis.ee/CV/Mait_Rungi/est/#Teenistuskaik" width="100%" height="600" frameborder="0"></iframe>');
+        document.getElementById('slider4Link').remove();
+    });
+    document.getElementById('bullet1Link').addEventListener('click', function() {
+        closeWebpageInThirdPage();
+        document.getElementById('bullet1Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider1" src="https://docs.google.com/presentation/d/1sbQ_cdHUplp0tW88_1Hq6FVTHJ85aN8CxXxldbid6Mg/edit?usp=drive_link" width="100%" height="600" frameborder="0"></iframe>');
+    });
+
+    document.getElementById('bullet2Link').addEventListener('click', function() {
+        closeWebpageInThirdPage();
+        document.getElementById('bullet2Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider2" src="https://docs.google.com/presentation/d/1J951pwl5kQRxrpHkXYavUlAlvadluXw6y390iKDRk0I/edit?usp=drive_link" width="100%" height="600" frameborder="0"></iframe>');
+    });
+
+    document.getElementById('bullet3Link').addEventListener('click', function() {
+        closeWebpageInThirdPage();
+        document.getElementById('bullet3Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider3" src="https://docs.google.com/presentation/d/1v5HoWfvOmZg1jPXJrmQ87A_9VxRyL_RaxwvZvHEmF6M/edit?usp=drive_link" width="100%" height="600" frameborder="0"></iframe>');
+    });
+
+    document.getElementById('bullet4Link').addEventListener('click', function() {
+        closeWebpageInThirdPage();
+        document.getElementById('bullet4Link').insertAdjacentHTML('afterend', '<iframe id="webpageSlider4" src="https://docs.google.com/presentation/d/1VozLmsUN4PDYgN123LyG1rpGRZRNmR6RmIiyyQHuQfg/edit?usp=drive_link" width="100%" height="600" frameborder="0"></iframe>');
+    });      
+
+    document.getElementById('blogLink').addEventListener('click', function() {
+        closeWebpageInFifthPage();
+        document.getElementById('blogLink').insertAdjacentHTML('afterend', '<iframe id="webpageBlog" src="https://naturessymphony.wordpress.com/" width="100%" height="600" frameborder="0"></iframe>');
+    });  
+
+    function closeWebpageInThirdPage() {
+        var iframe = document.querySelector('#thirdPage iframe');
+        if (iframe) {
+            iframe.remove();
+        }
+    }
+
+    function closeWebpageInFifthPage() {
+        var iframe = document.querySelector('#fifthPage iframe');
+        if (iframe) {
+            iframe.remove();
+        }
+    }
+
+    new fullpage('#fullpage', {
+      sectionsColor: ['yellow', 'orange', 'green', '#C0C0C0', 'lightblue', 'lightblue'],
+      autoScrolling:true,
+      navigation: true,
+      navigationPosition: 'right',
+      lockAnchors: false,
+      anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
+      menu: '#menu',
+      // Get your license at https://alvarotrigo.com/fullPage/pricing/
+      licenseKey: 'YOUR LICENSE KEY HERE'
+    });
+  </script>
+</body>
+</html>
+
