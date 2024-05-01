@@ -1,0 +1,193 @@
+.imgElement img {
+    max-height: 70vh; /* Limits the height to the viewport height */
+    max-width: 100%; /* Limits the width to the viewport width */
+    width: auto; /* Maintains the original width aspect ratio */
+    height: auto; /* Maintains the original height aspect ratio */
+    object-fit: contain;
+}
+
+.navbar {
+    background-color: transparent !important; 
+    backdrop-filter: blur(1.5px); /* Apply blur effect */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: white !important;
+    margin-top: 2em !important;
+}
+  
+p, a {
+    font-family: 'Open Sans';
+    color: white !important;
+    font-size: 2em;
+}
+  
+.list {
+    font-family: 'Montserrat';
+    text-align: left;
+    color: white !important;
+    margin-left: 8em;
+    font-size: 2em;
+}
+  
+.s1 {
+    background: url('images/loodus1.jpg');
+    background-size: cover;
+    text-align: center;
+}
+  
+.s2 {
+    background: url('images/elektroonika.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+        color: white !important;
+    }
+}
+
+.s3 {
+    background: url('images/varvid3.png');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+        color: white !important;
+    }
+}
+  
+.s4 {
+    background: url('images/loodus2.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+        color: white !important;
+    }
+
+    p, a {
+        margin-top: 1em;
+        text-align: left;
+        margin-left: 5em;
+        color: white !important;
+    }
+}
+
+.s5 {
+    background: url('images/puutoo5.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: left;
+        margin-left: 2em;
+        color: white !important;
+    }
+
+    p {
+        text-align: left;
+        margin-left: 5em;
+        color: white !important;
+    }
+}
+  
+.s6 {
+    background: url('images/oppimine.jpg');
+    background-size: cover;
+
+    h1 {
+        text-align: right, top;
+        margin-right: 3.7em;
+        font-size: 2.1em;
+        color: white !important;
+    }
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.s7 {
+    background: url('images/mang.jpg');
+    background-size: cover;
+}
+
+ul li{
+    color: white !important;
+    padding-left: 75px;
+}
+
+.textElement{
+    margin-top: 75px;
+    padding-left: 75px;
+    color: white !important;
+}
+
+span {
+    background: white !important;
+}
+
+span.navbar-toggler-icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+  
+.fp-slidesNav.fp-bottom {
+    margin-left: 1em !important;
+}
+
+.game {
+    text-align: center; 
+    width: 90%; 
+    max-width: 600px; 
+}
+
+.game .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.game .move-icon {
+    height: 50px;
+}
+
+.game .move-button {
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.game .result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.game .score {
+    margin-top: 60px;
+}
+
+.game .reset-score-button,
+.game .auto-play-button {
+    background-color: white;
+    border-radius: 200px;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
