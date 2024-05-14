@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kodulehekülg</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="fullPage">
+    <div class="section s1" id="section1">
+      <h1>Gertrud Roos</h1>
+      <nav id="menu">
+        <ul>
+          <li data-menuanchor="section1"><a href="#section1">Mina</a></li>
+          <li data-menuanchor="section2"><a href="#section2">Hobid</a></li>
+          <li data-menuanchor="section3"><a href="#section3">Oskused</a></li>
+          <li data-menuanchor="section4"><a href="#section4">Kontakt</a></li>
+          <li data-menuanchor="section5"><a href="#section5">Tööd</a></li>
+          <li data-menuanchor="section6"><a href="#section6">Muusika</a></li>
+          <li data-menuanchor="section7"><a href="#section7">Mäng</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="section s2" id="section2">
+      <h1>Hobid</h1>
+      <div class="slide">
+        <h3 id="kirjeldus">Jõusaal</h3>
+        <p id="kirjeldus">Vabal ajal käin jõusaalis, see on mu lemmik vaba aja tegevus.</p>
+      </div>
+      <div class="slide">
+        <h3 id="kirjeldus">Küüned</h3>
+        <p id="kirjeldus">Kooli ja töö kõrvalt õpin ma ka küünetehnikuks. Mulle meeldib oma loomingulisust sellega väljendada.</p>
+      </div>
+      <div class="slide">
+        <h3 id="kirjeldus">Muusika</h3>
+        <p id="kirjeldus">Muusikat olen ma alati armastanud nii teha, kirjutada kui ka laulda. See on mu lemmikuim loominguline tegevus.</p>
+      </div>
+    </div>
+
+    <div class="section s3" id="section3">
+      <h1>Oskused:</h1>
+      <div class="slide">
+        <h2>HTML</h2>
+      </div>
+      <div class="slide">
+        <h2>CSS</h2>
+      </div>
+      <div class="slide">
+        <h2>Javascript</h2>
+      </div>
+      <div class="slide">
+        <h2>Muusika produktsioon</h2>
+      </div>
+    </div>
+
+    <div class="section s4" id="section4">
+      <h1>Kontaktandmed</h1>
+      <div id="box">
+      <h3>Email: <a href="mailto:gertrudroos1@gmail.com">gertrudroos1@gmail.com</a></h3>
+      <h3>Sotsiaalmeedia: <a href="https://linktr.ee/ruudi">Link</a></h3>
+      </div>
+    </div>
+    
+
+    <div class="section s5" id="section5">
+      <h1>Minu tehtud tööd:</h1>
+      <h3>Minu greeny: <a href="https://greeny.cs.tlu.ee/~gertrudr/">Link</a> </h3>
+      <h3>Minu githubi kodused tööd: <a href="https://github.com/ruudiac/oo2024">Link</a> </h3>
+      <h3></h3>
+    </div>
+
+    <div class="section s6" id="section6">
+      <h1>Muusika:</h1>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1KKWCjHY4I41VzMC5BC4zD?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="section s7" id="section7">
+      <h1>Mäng</h1>
+      <button id="startGame">Alusta mängu</button>
+      <p id="gameOutput"></p>
+    </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" ></script>
+  
+  <script defer>
+
+new fullpage('#fullPage', {
+  autoScrolling: true,
+
+  showActiveTooltip: true,
+  scrollingSpeed: 1500,
+  controlArrows: false,
+  slidesNavigation: true,
+});
+  </script>
+   <script defer>
+    const startGameBtn = document.getElementById('startGame');
+    const gameOutput = document.getElementById('gameOutput');
+
+    function startGame() {
+      const randomNumber = Math.floor(Math.random() * 10) + 1; 
+      const userGuess = prompt('Arva number 1 ja 10 vahel:');
+      
+      if (userGuess === null) {
+        gameOutput.textContent = 'Mäng cancelled.';
+      } else {
+        const guess = parseInt(userGuess);
+        if (isNaN(guess)) {
+          gameOutput.textContent = 'Palun sisesta korrektne number.';
+        } else if (guess === randomNumber) {
+          gameOutput.textContent = 'Palju õnne! Valisid õigesti!';
+        } else {
+          gameOutput.textContent = `Õige number oli ${randomNumber}.`;
+        }
+      }
+    }
+    startGameBtn.addEventListener('click', startGame);
+  </script>
+</body>
+</html>
